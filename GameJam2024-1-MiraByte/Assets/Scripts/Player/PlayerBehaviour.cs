@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 namespace Player
@@ -7,15 +8,20 @@ namespace Player
     public class PlayerBehaviour : MonoBehaviour
     {
         public PlayerType playerType;
+        public AnimatorController prisonerAnimator;
+        public AnimatorController guardAnimator;
+        Animator playerAnimator;
         PlayerBase player;
         Rigidbody2D rb;
 
         void Start()
         {
+            playerAnimator = gameObject.GetComponent<Animator>();
             switch (playerType)
             {
                 case PlayerType.Prisoner:
                     player = new Prisoner(5, playerType);
+                    playerAnimator.runtimeAnimatorController = prisonerAnimator;
                     break;
                 case PlayerType.Guard:
                     break;
@@ -42,10 +48,12 @@ namespace Player
                     GetComponent<SpriteRenderer>().flipX = horizontal != -1;
                 }
                 player.ChangePlayerState(PlayerState.Run);
+                playerAnimator.SetBool("isRunning", true);
             }
             else
             {
                 player.ChangePlayerState(PlayerState.Idle);
+                playerAnimator.SetBool("isRunning", false);
             }
         }
     }
