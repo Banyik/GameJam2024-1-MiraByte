@@ -34,6 +34,7 @@ namespace Player
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
             Vector2 movement = new Vector2(horizontal, vertical);
+            rb.velocity = Vector2.Lerp(rb.velocity, movement, player.Speed) * player.Speed;
             if (rb.velocity != new Vector2(0, 0) )
             {
                 if (horizontal != 0)
