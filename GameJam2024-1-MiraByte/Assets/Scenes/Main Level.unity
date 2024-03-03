@@ -689,8 +689,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4649999, y: -0.17755008, z: 0}
-    m_Extent: {x: 6.5549, y: 7.71325, z: 0}
+    m_Center: {x: 0.46480012, y: -0.18510008, z: 0}
+    m_Extent: {x: 6.5573997, y: 7.7026, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -717,7 +717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184750500}
   - component: {fileID: 184750501}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -10002,7 +10002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 237563639}
   - component: {fileID: 237563640}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -15139,7 +15139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 369442125}
   - component: {fileID: 369442126}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1 (3)
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -15216,7 +15216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385798966}
   - component: {fileID: 385798967}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1 (4)
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -15462,8 +15462,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46430016, y: -0.17755008, z: 0}
-    m_Extent: {x: 6.5463, y: 7.70035, z: 0}
+    m_Center: {x: 0.46510005, y: -0.17980003, z: 0}
+    m_Extent: {x: 6.561, y: 7.7047, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -20656,7 +20656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 486217367}
   - component: {fileID: 486217368}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -25653,8 +25653,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.47025013, y: -0.17140007, z: 0}
-    m_Extent: {x: 6.55505, y: 7.7047, z: 0}
+    m_Center: {x: 0.46350002, y: -0.1714499, z: 0}
+    m_Extent: {x: 6.561, y: 7.7058496, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -26715,8 +26715,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46220016, y: -0.18344998, z: 0}
-    m_Extent: {x: 6.5541, y: 7.70055, z: 0}
+    m_Center: {x: 0.4612999, y: -0.17705011, z: 0}
+    m_Extent: {x: 6.5492, y: 7.70195, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -26897,8 +26897,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4633, y: -0.17789984, z: 0}
-    m_Extent: {x: 6.564, y: 7.7128, z: 0}
+    m_Center: {x: 0.4642501, y: -0.1724, z: 0}
+    m_Extent: {x: 6.54985, y: 7.7047, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -26940,7 +26940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 813309675}
   - component: {fileID: 813309676}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -27171,8 +27171,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.47105002, y: -0.1796, z: 0}
-    m_Extent: {x: 6.5589504, y: 7.7004004, z: 0}
+    m_Center: {x: 0.4554, y: -0.17750001, z: 0}
+    m_Extent: {x: 6.5557, y: 7.7046003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -27383,8 +27383,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46054983, y: -0.18245006, z: 0}
-    m_Extent: {x: 6.55305, y: 7.7079496, z: 0}
+    m_Center: {x: 0.45869994, y: -0.1708498, z: 0}
+    m_Extent: {x: 6.5551996, y: 7.70645, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -27411,7 +27411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888907112}
   - component: {fileID: 888907113}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -32704,7 +32704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1028629997}
   - component: {fileID: 1028629998}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -32801,7 +32801,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1114196101}
   m_Father: {fileID: 1382566591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1036194590
@@ -33843,7 +33844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1036851413}
   - component: {fileID: 1036851414}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -33920,7 +33921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038406070}
   - component: {fileID: 1038406071}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -34166,8 +34167,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46300006, y: -0.17980003, z: 0}
-    m_Extent: {x: 6.5539, y: 7.7155, z: 0}
+    m_Center: {x: 0.45775008, y: -0.17965007, z: 0}
+    m_Extent: {x: 6.5555496, y: 7.7135496, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34194,7 +34195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1112013963}
   - component: {fileID: 1112013964}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -34260,6 +34261,101 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 17.989021, y: 11.006496}
+  m_EdgeRadius: 0
+--- !u!1 &1114196100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1114196101}
+  - component: {fileID: 1114196103}
+  - component: {fileID: 1114196102}
+  m_Layer: 0
+  m_Name: door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1114196101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114196100}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.03, y: 0.07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1036194589}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1114196102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114196100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 749b60ed9e5e0524e8aebdf9da2a22c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1036194591}
+  ogtile: {fileID: 11400000, guid: ac76920e9729c43439d490e45dfe7c98, type: 2}
+  changedTile: {fileID: 11400000, guid: 0fc3bcc122a11664d8ae23c0e82358e9, type: 2}
+  pos: {x: -3, y: -1, z: 0}
+  set: 0
+--- !u!61 &1114196103
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114196100}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5439656, y: 0.27198273}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.3351884, y: 2.9286056}
   m_EdgeRadius: 0
 --- !u!1 &1138913436
 GameObject:
@@ -34524,7 +34620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189568564}
   - component: {fileID: 1189568565}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1 (1)
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -34601,7 +34697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211932463}
   - component: {fileID: 1211932464}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -34709,7 +34805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1227209951}
   - component: {fileID: 1227209952}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -35053,8 +35149,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46420002, y: -0.17954993, z: 0}
-    m_Extent: {x: 6.5529, y: 7.70245, z: 0}
+    m_Center: {x: 0.467, y: -0.17774987, z: 0}
+    m_Extent: {x: 6.5586, y: 7.71085, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35306,7 +35402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442508071}
   - component: {fileID: 1442508072}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1 (2)
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -35552,8 +35648,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4660499, y: -0.18254995, z: 0}
-    m_Extent: {x: 6.54935, y: 7.70365, z: 0}
+    m_Center: {x: 0.46685004, y: -0.18319988, z: 0}
+    m_Extent: {x: 6.5504503, y: 7.7072, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -35580,7 +35676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1472287481}
   - component: {fileID: 1472287482}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -35739,7 +35835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505969440}
   - component: {fileID: 1505969441}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -36690,8 +36786,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.47200012, y: -0.18385005, z: 0}
-    m_Extent: {x: 6.5569, y: 7.70385, z: 0}
+    m_Center: {x: 0.4647498, y: -0.17659998, z: 0}
+    m_Extent: {x: 6.55165, y: 7.7135, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -37003,7 +37099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1952124614}
   - component: {fileID: 1952124615}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
@@ -46936,7 +47032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2037333818}
   - component: {fileID: 2037333819}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Col1
   m_TagString: mininpcwall
   m_Icon: {fileID: 0}
