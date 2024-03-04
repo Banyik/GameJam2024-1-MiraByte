@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class warpPlayer : MonoBehaviour
 {
-    public bool enabled = true;
-
     public GameObject player;
-
-    public Vector3 warpTo;
+    public GameObject warpTo;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        player.transform.position = warpTo;
+        player.transform.position = warpTo.transform.position;
     }
 }
