@@ -13,11 +13,16 @@ public class CheckTile : MonoBehaviour
     public TMP_Text text;
     public string message;
     public int timeToDeactivateText;
-    private void OnMouseDown()
+    private void OnMouseOver()
     {
+        Vector3 mousePosition = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>().ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = 0f;
+        if(Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, mousePosition) > 6.5f)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0))
         {
-            //interact
             if (playSound)
             {
                 audioSource.clip = clip;
@@ -33,10 +38,9 @@ public class CheckTile : MonoBehaviour
                 Invoke(nameof(DeactivateText), timeToDeactivateText);
             }
         }
-        else if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1))
         {
-            //action
-            Debug.Log("Action");
+            //Action
         }
     }
 

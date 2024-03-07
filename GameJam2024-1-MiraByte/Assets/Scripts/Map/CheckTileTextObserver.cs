@@ -12,7 +12,6 @@ public class CheckTileTextObserver : MonoBehaviour
         if (!tileCheckerScripts.Contains(tileScript))
         {
             tileCheckerScripts.Add(tileScript);
-            Debug.Log($"Added {tileScript.name}");
         }
     }
 
@@ -21,7 +20,6 @@ public class CheckTileTextObserver : MonoBehaviour
         if (tileCheckerScripts.Contains(tileScript))
         {
             tileCheckerScripts.Remove(tileScript);
-            Debug.Log($"Removed {tileScript.name}");
         }
     }
 
@@ -29,7 +27,6 @@ public class CheckTileTextObserver : MonoBehaviour
     {
         if(lastAlert != tileScript)
         {
-            Debug.Log($"Alert from {tileScript.name}");
             if (!isAlerted)
             {
                 lastAlert = tileScript;
@@ -40,7 +37,6 @@ public class CheckTileTextObserver : MonoBehaviour
                 if (lastAlert.GetComponent<CheckTile>().IsInvokingText())
                 {
                     lastAlert.GetComponent<CheckTile>().CancelDeactivationInvoke();
-                    Debug.Log($"Cancelling Invoke to {lastAlert.name}");
                 }
                 lastAlert = tileScript;
             }
