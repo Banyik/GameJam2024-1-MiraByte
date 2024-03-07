@@ -10,17 +10,35 @@ public class changeTile : MonoBehaviour
     public TileBase changedTile;
     public Vector3Int pos;
     public bool set;
-    private void OnMouseDown()
+    public bool changeObjectActivity;
+
+    public List<GameObject> objects = new List<GameObject>();
+
+    public void ChangeTile()
     {
         if (!set)
         {
             tilemap.SetTile(pos, changedTile);
             set = true;
+            if (changeObjectActivity)
+            {
+                foreach (var obj in objects)
+                {
+                    obj.SetActive(false);
+                }
+            }
         }
         else
         {
             tilemap.SetTile(pos, ogtile);
             set = false;
+            if (changeObjectActivity)
+            {
+                foreach (var obj in objects)
+                {
+                    obj.SetActive(true);
+                }
+            }
         }
     }
 }

@@ -5,11 +5,11 @@ using UnityEngine.Rendering.Universal;
 
 public class LightFlicker : MonoBehaviour
 {
-    public Light2D light;
+    public Light2D light2d;
     public float min;
     public float max;
     void Update()
     {
-        light.intensity = Random.Range(min, max);
+        light2d.intensity = Random.Range(min, max);
     }
 }
