@@ -13,7 +13,8 @@ public class changeTile : MonoBehaviour
     public bool changeObjectActivity;
 
     public List<GameObject> objects = new List<GameObject>();
-    private void OnMouseDown()
+
+    public void ChangeTile()
     {
         if (!set)
         {

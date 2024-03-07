@@ -6,6 +6,7 @@ using TMPro;
 public class CheckTile : MonoBehaviour
 {
     public CheckTileTextObserver CheckTileTextObserver;
+    public changeTile TileChanger;
     public bool playSound;
     public AudioSource audioSource;
     public AudioClip clip;
@@ -13,11 +14,12 @@ public class CheckTile : MonoBehaviour
     public TMP_Text text;
     public string message;
     public int timeToDeactivateText;
+    public bool callDoorAction;
     private void OnMouseOver()
     {
         Vector3 mousePosition = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>().ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0f;
-        if(Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, mousePosition) > 6.5f)
+        if(Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, mousePosition) > 7.5f)
         {
             return;
         }
@@ -40,7 +42,10 @@ public class CheckTile : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
-            //Action
+            if (callDoorAction)
+            {
+                TileChanger.ChangeTile();
+            }
         }
     }
 

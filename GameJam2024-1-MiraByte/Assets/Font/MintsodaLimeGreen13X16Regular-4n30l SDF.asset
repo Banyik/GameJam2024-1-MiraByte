@@ -73,9 +73,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.8333333
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -168,9 +168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: MintsodaLimeGreen13X16Regular-4n30l SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -1129517793
   material: {fileID: -7811761751310298441}
-  materialHashCode: 0
+  materialHashCode: 479072863
   m_Version: 1.1.0
   m_SourceFontFileGUID: 9f2b9c0d1866797419e2d1cb28229011
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 9f2b9c0d1866797419e2d1cb28229011, type: 3}
