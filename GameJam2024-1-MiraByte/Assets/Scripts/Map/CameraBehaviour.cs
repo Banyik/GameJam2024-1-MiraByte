@@ -8,19 +8,19 @@ public class CameraBehaviour : MonoBehaviour
 {
     public float timeToStart;
     public float sleepTime;
-    Light2D light;
+    Light2D light2d;
     bool isActive;
 
     private void Start()
     {
-        light = gameObject.GetComponent<Light2D>();
+        light2d = gameObject.GetComponent<Light2D>();
         Invoke(nameof(Activate), timeToStart);
     }
 
     void Activate()
     {
         isActive = !isActive;
-        light.enabled = isActive;
+        light2d.enabled = isActive;
         Invoke(nameof(Activate), sleepTime);
     }
 
