@@ -7,9 +7,11 @@ public class CheckTile : MonoBehaviour
 {
     public CheckTileTextObserver CheckTileTextObserver;
     public changeTile TileChanger;
-    public bool playSound;
+    public bool playSoundOnInteraction;
+    public bool playSoundOnAction;
     public AudioSource audioSource;
-    public AudioClip clip;
+    public AudioClip interactionClip;
+    public AudioClip actionClip;
     public bool messageOnInteract;
     public TMP_Text text;
     public string message;
@@ -25,9 +27,9 @@ public class CheckTile : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            if (playSound)
+            if (playSoundOnInteraction)
             {
-                audioSource.clip = clip;
+                audioSource.clip = interactionClip;
                 audioSource.Play();
             }
             if (messageOnInteract)
@@ -45,6 +47,11 @@ public class CheckTile : MonoBehaviour
             if (callDoorAction)
             {
                 TileChanger.ChangeTile();
+            }
+            if (playSoundOnAction)
+            {
+                audioSource.clip = actionClip;
+                audioSource.Play();
             }
         }
     }
