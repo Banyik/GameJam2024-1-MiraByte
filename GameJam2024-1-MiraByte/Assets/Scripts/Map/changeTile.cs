@@ -29,7 +29,7 @@ public class changeTile : MonoBehaviour
             {
                 foreach (var obj in objects)
                 {
-                    obj.SetActive(false);
+                    obj.SetActive(!obj.activeInHierarchy);
                 }
             }
             if (playSound)
@@ -46,7 +46,7 @@ public class changeTile : MonoBehaviour
             {
                 foreach (var obj in objects)
                 {
-                    obj.SetActive(true);
+                    obj.SetActive(!obj.activeInHierarchy);
                 }
             }
             if (playSound)
