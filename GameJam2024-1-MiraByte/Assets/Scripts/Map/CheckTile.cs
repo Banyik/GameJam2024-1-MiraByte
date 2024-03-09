@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Player;
 
 public class CheckTile : MonoBehaviour
 {
@@ -16,10 +17,17 @@ public class CheckTile : MonoBehaviour
     public TMP_Text text;
     public string message;
     public int timeToDeactivateText;
-    public bool callDoorAction;
     bool interacted;
+    public bool hasHoverItem;
+    public GameObject hoverItem;
+    public ActionTypes actionType;
+    public GameObject interactableGameObject;
     private void OnMouseOver()
     {
+        if (hasHoverItem)
+        {
+            hoverItem.SetActive(true);
+        }
         Vector3 mousePosition = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>().ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0f;
         if(Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, mousePosition) > 7.5f)
@@ -46,15 +54,31 @@ public class CheckTile : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
-            if (callDoorAction)
+            switch (actionType)
             {
-                TileChanger.ChangeTile();
+                case ActionTypes.DoorInteract:
+                    TileChanger.ChangeTile();
+                    break;
+                case ActionTypes.CheckInteractableItem:
+                    interactableGameObject.SetActive(true);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().canMove = false;
+                    break;
+                default:
+                    break;
             }
             if (playSoundOnAction && !audioSource.isPlaying)
             {
                 audioSource.clip = actionClip;
                 audioSource.Play();
             }
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        if (hasHoverItem)
+        {
+            hoverItem.SetActive(false);
         }
     }
 

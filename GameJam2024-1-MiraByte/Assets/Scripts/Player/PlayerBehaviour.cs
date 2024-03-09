@@ -17,6 +17,7 @@ namespace Player
         List<AudioClip> clips = new List<AudioClip>();
         public AudioSource source;
         public float walkTime;
+        public bool canMove = true;
 
         void Start()
         {
@@ -36,7 +37,10 @@ namespace Player
         }
         void FixedUpdate()
         {
-            MovementHandler();
+            if (canMove)
+            {
+                MovementHandler();
+            }
         }
 
         void MovementHandler()
