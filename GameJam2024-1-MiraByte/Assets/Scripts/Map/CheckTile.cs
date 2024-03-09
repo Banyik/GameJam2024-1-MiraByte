@@ -17,6 +17,7 @@ public class CheckTile : MonoBehaviour
     public string message;
     public int timeToDeactivateText;
     public bool callDoorAction;
+    bool interacted;
     private void OnMouseOver()
     {
         Vector3 mousePosition = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>().ScreenToWorldPoint(Input.mousePosition);
@@ -27,7 +28,7 @@ public class CheckTile : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            if (playSoundOnInteraction)
+            if (playSoundOnInteraction && !audioSource.isPlaying)
             {
                 audioSource.clip = interactionClip;
                 audioSource.Play();
@@ -41,6 +42,7 @@ public class CheckTile : MonoBehaviour
                 text.gameObject.SetActive(true);
                 Invoke(nameof(DeactivateText), timeToDeactivateText);
             }
+            interacted = true;
         }
         if (Input.GetMouseButtonDown(1))
         {
@@ -48,7 +50,7 @@ public class CheckTile : MonoBehaviour
             {
                 TileChanger.ChangeTile();
             }
-            if (playSoundOnAction)
+            if (playSoundOnAction && !audioSource.isPlaying)
             {
                 audioSource.clip = actionClip;
                 audioSource.Play();
