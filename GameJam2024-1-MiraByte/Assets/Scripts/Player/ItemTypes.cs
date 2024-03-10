@@ -8,5 +8,6 @@ public enum ItemTypes
     FuseBoxKey,
     Bone,
     Crowbar,
+    MeatlDetector,
 
 }
