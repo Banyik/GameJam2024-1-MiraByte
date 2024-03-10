@@ -9,7 +9,8 @@ public class KitchenMiniGame : MonoBehaviour
     bool goUp = false;
     public GameObject bone;
     public GameObject Minigame;
-    //-190 -58
+    public GameObject[] objectsToActivate;
+    public GameObject[] objectsToDeactivate;
     public void Try()
     {
         stop = true;
@@ -70,6 +71,15 @@ public class KitchenMiniGame : MonoBehaviour
             {
                 if (transform.localPosition.x >= -192 && transform.localPosition.x <= -58)
                 {
+                    GameObject.Find("ScriptHandler").GetComponent<EnableWalking>().EnableMoving();
+                    foreach (var item in objectsToActivate)
+                    {
+                        item.SetActive(true);
+                    }
+                    foreach (var item in objectsToDeactivate)
+                    {
+                        item.SetActive(false);
+                    }
                     Minigame.SetActive(false);
                 }
                 stop = false;
