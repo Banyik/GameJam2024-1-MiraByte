@@ -17,11 +17,11 @@ public class CheckTile : MonoBehaviour
     public TMP_Text text;
     public string message;
     public int timeToDeactivateText;
-    bool interacted;
     public bool hasHoverItem;
     public GameObject hoverItem;
     public ActionTypes actionType;
     public GameObject interactableGameObject;
+    public bool isOnlyForGuard;
     private void OnMouseOver()
     {
         if (hasHoverItem)
@@ -50,14 +50,34 @@ public class CheckTile : MonoBehaviour
                 text.gameObject.SetActive(true);
                 Invoke(nameof(DeactivateText), timeToDeactivateText);
             }
-            interacted = true;
         }
         if (Input.GetMouseButtonDown(1))
         {
             switch (actionType)
             {
                 case ActionTypes.DoorInteract:
-                    TileChanger.ChangeTile();
+                    if (isOnlyForGuard && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Guard)
+                    {
+                        TileChanger.ChangeTile();
+                    }
+                    else if (isOnlyForGuard)
+                    {
+                        CancelDeactivationInvoke();
+                        CheckTileTextObserver.Subscribe(gameObject);
+                        CheckTileTextObserver.AlertObserver(gameObject);
+                        text.text = "Nekem nincs ehhez hozzáférésem...";
+                        text.gameObject.SetActive(true);
+                        Invoke(nameof(DeactivateText), timeToDeactivateText);
+                        if (!audioSource.isPlaying)
+                        {
+                            audioSource.clip = actionClip;
+                            audioSource.Play();
+                        };
+                    }
+                    else
+                    {
+                        TileChanger.ChangeTile();
+                    }
                     break;
                 case ActionTypes.CheckInteractableItem:
                     interactableGameObject.SetActive(true);
@@ -73,6 +93,7 @@ public class CheckTile : MonoBehaviour
             }
         }
     }
+
 
     private void OnMouseExit()
     {
