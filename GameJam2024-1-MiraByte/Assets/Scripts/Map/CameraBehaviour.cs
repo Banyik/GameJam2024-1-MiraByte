@@ -11,6 +11,8 @@ public class CameraBehaviour : MonoBehaviour
     Light2D light2d;
     bool isActive;
 
+    public GameObject gameOverMenu;
+
     private void Start()
     {
         light2d = gameObject.GetComponent<Light2D>();
@@ -28,7 +30,8 @@ public class CameraBehaviour : MonoBehaviour
     {
         if((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive)
         {
-            Debug.Log("game over");
+            Time.timeScale = 0f;
+            gameOverMenu.SetActive(true);
         }
     }
 
@@ -36,7 +39,8 @@ public class CameraBehaviour : MonoBehaviour
     {
         if ((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive)
         {
-            Debug.Log("game over");
+            Time.timeScale = 0f;
+            gameOverMenu.SetActive(true);
         }
     }
 
