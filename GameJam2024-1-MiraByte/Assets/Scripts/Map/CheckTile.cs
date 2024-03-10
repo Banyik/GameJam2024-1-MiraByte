@@ -7,7 +7,6 @@ using Player;
 public class CheckTile : MonoBehaviour
 {
     public CheckTileTextObserver CheckTileTextObserver;
-    CursorChanger cursor;
     public changeTile TileChanger;
     public bool playSoundOnInteraction;
     public bool playSoundOnAction;
@@ -23,14 +22,8 @@ public class CheckTile : MonoBehaviour
     public GameObject hoverItem;
     public ActionTypes actionType;
     public GameObject interactableGameObject;
-
-    private void Start()
-    {
-        cursor = GameObject.Find("ScriptHandler").GetComponent<CursorChanger>();
-    }
     private void OnMouseOver()
     {
-        cursor.SetHoverCursor();
         if (hasHoverItem)
         {
             hoverItem.SetActive(true);
@@ -83,8 +76,6 @@ public class CheckTile : MonoBehaviour
 
     private void OnMouseExit()
     {
-        cursor.SetBaseCursor();
-
         if (hasHoverItem)
         {
             hoverItem.SetActive(false);
