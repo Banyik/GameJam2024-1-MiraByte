@@ -14,6 +14,11 @@ namespace Player
         PlayerBase player;
         Rigidbody2D rb;
 
+        List<AudioClip> clips = new List<AudioClip>();
+        public AudioSource source;
+        public float walkTime;
+        public bool canMove = true;
+
         void Start()
         {
             playerAnimator = gameObject.GetComponent<Animator>();
@@ -32,7 +37,10 @@ namespace Player
         }
         void FixedUpdate()
         {
-            MovementHandler();
+            if (canMove)
+            {
+                MovementHandler();
+            }
         }
 
         void MovementHandler()
@@ -49,12 +57,35 @@ namespace Player
                 }
                 player.ChangePlayerState(PlayerState.Run);
                 playerAnimator.SetBool("isRunning", true);
+                if (!IsInvoking(nameof(PlayRandomClip)))
+                {
+                    Invoke(nameof(PlayRandomClip), walkTime);
+                }
             }
             else
             {
                 player.ChangePlayerState(PlayerState.Idle);
                 playerAnimator.SetBool("isRunning", false);
+                CancelInvoke(nameof(PlayRandomClip));
+                source.Pause();
             }
+        }
+
+        public void SetClip(List<AudioClip> clips)
+        {
+            
+            if(this.clips.Count > 0 && clips[0] == this.clips[0])
+            {
+                return;
+            }
+            this.clips.Clear();
+            this.clips.AddRange(clips);
+        }
+
+        void PlayRandomClip()
+        {
+            source.clip = clips[Random.Range(0, clips.Count)];
+            source.Play();
         }
     }
 }

@@ -14,6 +14,11 @@ public class changeTile : MonoBehaviour
 
     public List<GameObject> objects = new List<GameObject>();
 
+    public bool playSound;
+    public AudioSource source;
+    public AudioClip clip1;
+    public AudioClip clip2;
+
     public void ChangeTile()
     {
         if (!set)
@@ -24,8 +29,13 @@ public class changeTile : MonoBehaviour
             {
                 foreach (var obj in objects)
                 {
-                    obj.SetActive(false);
+                    obj.SetActive(!obj.activeInHierarchy);
                 }
+            }
+            if (playSound)
+            {
+                source.clip = clip1;
+                source.Play();
             }
         }
         else
@@ -36,8 +46,13 @@ public class changeTile : MonoBehaviour
             {
                 foreach (var obj in objects)
                 {
-                    obj.SetActive(true);
+                    obj.SetActive(!obj.activeInHierarchy);
                 }
+            }
+            if (playSound)
+            {
+                source.clip = clip2;
+                source.Play();
             }
         }
     }
