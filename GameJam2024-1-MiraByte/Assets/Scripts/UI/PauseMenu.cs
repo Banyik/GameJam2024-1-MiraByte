@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject basePauseMenu, pauseButton, resumeButton, helpMenu, pauseMenu;
+    public GameObject basePauseMenu, pauseButton, resumeButton, helpMenu, pauseMenu, optionsMenu;
     public void Start()
     {
         Time.timeScale = 1f;
@@ -18,6 +18,7 @@ public class PauseMenu : MonoBehaviour
         resumeButton.SetActive(true);
         pauseButton.SetActive(false);
         helpMenu.SetActive(false);
+        optionsMenu.SetActive(false);
     }
     public void Resume() 
     {
@@ -37,5 +38,19 @@ public class PauseMenu : MonoBehaviour
         helpMenu.SetActive(true);
         basePauseMenu.SetActive(false);
         pauseButton.SetActive(false);
+    }
+    public void QuitApp()
+    {
+        //Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
+    public void ShowOptions()
+    {
+        optionsMenu.SetActive(true);
+        pauseMenu.SetActive(false);
+        basePauseMenu.SetActive(false);
+        resumeButton.SetActive(false);
+        pauseButton.SetActive(false);
+        helpMenu.SetActive(false);
     }
 }
