@@ -18,12 +18,18 @@ public class changeTile : MonoBehaviour
     public AudioSource source;
     public AudioClip clip1;
     public AudioClip clip2;
-
+    public bool checkForAlarm;
+    public GameObject gameOverMenu;
     public void ChangeTile()
     {
         if (!set)
         {
             tilemap.SetTile(pos, changedTile);
+            if (checkForAlarm  && !GameObject.Find("ScriptHandler").GetComponent<FuseBoxLeverHandler>().IsDisarmedState())
+            {
+                Time.timeScale = 0f;
+                gameOverMenu.SetActive(true);
+            }
             set = true;
             if (changeObjectActivity)
             {
