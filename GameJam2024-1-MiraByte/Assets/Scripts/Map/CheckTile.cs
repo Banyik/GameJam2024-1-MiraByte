@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -30,6 +31,10 @@ public class CheckTile : MonoBehaviour
     public ItemTypes itemTypeToGive;
     public bool itemForGuard;
     public bool itemForPlayer;
+    public bool needItemForAction;
+    public ItemTypes neededItemType;
+    public string messageIfItemIsMissing;
+    public bool DestroyOnPickUp;
 
     private void OnMouseOver()
     {
@@ -69,6 +74,11 @@ public class CheckTile : MonoBehaviour
                 case ActionTypes.DoorInteract:
                     if (isOnlyForGuard && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Guard)
                     {
+                        if (needItemForAction && GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().items.Where(x => x.item == neededItemType).ToList().Count == 0)
+                        {
+                            CallMessage(messageIfItemIsMissing);
+                            return;
+                        }
                         TileChanger.ChangeTile();
                     }
                     else if (isOnlyForGuard)
@@ -91,6 +101,11 @@ public class CheckTile : MonoBehaviour
                     }
                     else
                     {
+                        if (needItemForAction && GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().items.Where(x => x.item == neededItemType).ToList().Count == 0)
+                        {
+                            CallMessage(messageIfItemIsMissing);
+                            return;
+                        }
                         TileChanger.ChangeTile();
                     }
                     break;
@@ -115,6 +130,11 @@ public class CheckTile : MonoBehaviour
                     }
                     else
                     {
+                        if (needItemForAction && GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().items.Where(x => x.item == neededItemType).ToList().Count == 0)
+                        {
+                            CallMessage(messageIfItemIsMissing);
+                            return;
+                        }
                         interactableGameObject.SetActive(true);
                         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().canMove = false;
                     }
@@ -147,6 +167,12 @@ public class CheckTile : MonoBehaviour
                         {
                             GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().AddItem(new Items(itemTypeToGive, itemForGuard, itemForPlayer));
                             itemAdded = true;
+                            GameObject.Find("PickUpSound").GetComponent<AudioSource>().Play();
+                            if (DestroyOnPickUp)
+                            {
+                                DeactivateText();
+                                Destroy(gameObject);
+                            }
                         }
                     }
                     break;
