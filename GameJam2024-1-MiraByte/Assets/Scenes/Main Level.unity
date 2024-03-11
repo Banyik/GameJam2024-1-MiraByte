@@ -305,13 +305,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Egy biztos\xEDt\xF3 szekr\xE9ny..."
+  guardsMessage: "Egy biztos\xEDt\xF3 szekr\xE9ny..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 1
   interactableGameObject: {fileID: 1724717505}
-  isOnlyForGuard: 0
+  isOnlyForGuard: 1
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!1 &16656402
 GameObject:
   m_ObjectHideFlags: 0
@@ -5432,8 +5438,9 @@ GameObject:
   - component: {fileID: 32012934}
   - component: {fileID: 32012937}
   - component: {fileID: 32012936}
+  - component: {fileID: 32012938}
   m_Layer: 0
-  m_Name: hallway_props_1_4
+  m_Name: Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5669,13 +5676,33 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Ebbe a cser\xE9pbe kell rejtenem, amiket tal\xE1ltam..."
+  guardsMessage: 
   timeToDeactivateText: 5
   hasHoverItem: 0
   hoverItem: {fileID: 0}
-  actionType: 1
-  interactableGameObject: {fileID: 205780815}
+  actionType: 2
+  interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
+--- !u!114 &32012938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32012932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bd107fe2321414e90729787be71dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  FlowerInventory: {fileID: 0}
 --- !u!1 &48770455
 GameObject:
   m_ObjectHideFlags: 0
@@ -6277,8 +6304,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45915008, y: -0.18744993, z: 0}
-    m_Extent: {x: 6.55575, y: 7.70535, z: 0}
+    m_Center: {x: 0.46424985, y: -0.18530011, z: 0}
+    m_Extent: {x: 6.5581503, y: 7.7039003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6802,7 +6829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToStart: 3
   sleepTime: 5
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 1425946461}
 --- !u!60 &73275731
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8043,13 +8070,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva van a r\xE1cs..."
+  guardsMessage: "Z\xE1rva van a r\xE1cs..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &116123328
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8605,13 +8638,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &137742153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8809,13 +8848,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &138397107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9381,8 +9426,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45870018, y: -0.18210006, z: 0}
-    m_Extent: {x: 6.5579, y: 7.7092, z: 0}
+    m_Center: {x: 0.46115017, y: -0.18210006, z: 0}
+    m_Extent: {x: 6.55165, y: 7.7054996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9791,8 +9836,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46975017, y: -0.17860007, z: 0}
-    m_Extent: {x: 6.55285, y: 7.7064, z: 0}
+    m_Center: {x: 0.46659994, y: -0.17289996, z: 0}
+    m_Extent: {x: 6.5632, y: 7.7085, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10187,8 +10232,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46550012, y: -0.18050003, z: 0}
-    m_Extent: {x: 6.5564003, y: 7.7078, z: 0}
+    m_Center: {x: 0.46605015, y: -0.18495011, z: 0}
+    m_Extent: {x: 6.56385, y: 7.70595, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -31173,13 +31218,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &266497687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31517,14 +31568,20 @@ MonoBehaviour:
   actionClip: {fileID: 0}
   messageOnInteract: 0
   text: {fileID: 1730343426}
-  message: Szolid
+  message: 
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!1 &267743301
 GameObject:
   m_ObjectHideFlags: 0
@@ -31925,13 +31982,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &281888097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43481,8 +43544,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46564984, y: -0.17624998, z: 0}
-    m_Extent: {x: 6.55005, y: 7.70645, z: 0}
+    m_Center: {x: 0.45700002, y: -0.18214989, z: 0}
+    m_Extent: {x: 6.5541, y: 7.70405, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -53786,13 +53849,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &459216439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59545,13 +59614,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva van a r\xE1cs..."
+  guardsMessage: "Z\xE1rva van a r\xE1cs..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &485385668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -65867,8 +65942,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45904994, y: -0.17219996, z: 0}
-    m_Extent: {x: 6.55505, y: 7.7092, z: 0}
+    m_Center: {x: 0.46924996, y: -0.18085003, z: 0}
+    m_Extent: {x: 6.5581503, y: 7.70075, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -72163,13 +72238,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva van a r\xE1cs..."
+  guardsMessage: "Z\xE1rva van a r\xE1cs..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &677032084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -72367,13 +72448,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &679105279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73277,8 +73364,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45934987, y: -0.1719501, z: 0}
-    m_Extent: {x: 6.55315, y: 7.70625, z: 0}
+    m_Center: {x: 0.4618001, y: -0.17440009, z: 0}
+    m_Extent: {x: 6.5517, y: 7.7039003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -77415,7 +77502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToStart: 8
   sleepTime: 5
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 1425946461}
 --- !u!60 &786368388
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -77696,8 +77783,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45965004, y: -0.17464995, z: 0}
-    m_Extent: {x: 6.55895, y: 7.7014503, z: 0}
+    m_Center: {x: 0.46365, y: -0.18365002, z: 0}
+    m_Extent: {x: 6.5506496, y: 7.70215, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -78315,8 +78402,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46615005, y: -0.18054986, z: 0}
-    m_Extent: {x: 6.5596504, y: 7.69925, z: 0}
+    m_Center: {x: 0.46654987, y: -0.17630005, z: 0}
+    m_Extent: {x: 6.55655, y: 7.7061, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -78550,7 +78637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToStart: 8
   sleepTime: 5
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 1425946461}
 --- !u!60 &835339795
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79400,8 +79487,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46869993, y: -0.18735003, z: 0}
-    m_Extent: {x: 6.5601, y: 7.70395, z: 0}
+    m_Center: {x: 0.46074986, y: -0.17304993, z: 0}
+    m_Extent: {x: 6.55035, y: 7.70355, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -79565,7 +79652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToStart: 3
   sleepTime: 5
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 1425946461}
 --- !u!60 &862710372
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -81522,8 +81609,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4669001, y: -0.1791501, z: 0}
-    m_Extent: {x: 6.5515003, y: 7.71375, z: 0}
+    m_Center: {x: 0.45640016, y: -0.18420005, z: 0}
+    m_Extent: {x: 6.5543003, y: 7.7088003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -82483,13 +82570,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &962987721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88994,7 +89087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToStart: 3
   sleepTime: 5
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 1425946461}
 --- !u!1 &1032831282
 GameObject:
   m_ObjectHideFlags: 0
@@ -89191,14 +89284,20 @@ MonoBehaviour:
   actionClip: {fileID: 0}
   messageOnInteract: 0
   text: {fileID: 1730343426}
-  message: Szolid
+  message: 
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!1 &1036194588
 GameObject:
   m_ObjectHideFlags: 0
@@ -93841,13 +93940,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva van a r\xE1cs..."
+  guardsMessage: "Z\xE1rva van a r\xE1cs..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1041060535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94666,8 +94771,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46354985, y: -0.18674994, z: 0}
-    m_Extent: {x: 6.5525503, y: 7.70425, z: 0}
+    m_Center: {x: 0.4577999, y: -0.16980004, z: 0}
+    m_Extent: {x: 6.5537, y: 7.7053003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -94740,13 +94845,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva van a r\xE1cs..."
+  guardsMessage: "Z\xE1rva van a r\xE1cs..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1083120193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -95067,8 +95178,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46044993, y: -0.17764997, z: 0}
-    m_Extent: {x: 6.55595, y: 7.71395, z: 0}
+    m_Center: {x: 0.46115017, y: -0.17184997, z: 0}
+    m_Extent: {x: 6.56105, y: 7.70805, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -95865,17 +95976,23 @@ MonoBehaviour:
   playSoundOnAction: 0
   audioSource: {fileID: 0}
   interactionClip: {fileID: 0}
-  actionClip: {fileID: 0}
+  actionClip: {fileID: 8300000, guid: 6f3c790a9583162408cb89df1baaa9e1, type: 3}
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "A zuhanyz\xF3 ajtaja..."
+  guardsMessage: "A zuhanyz\xF3 ajtaja..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1106180095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -107113,14 +107230,20 @@ MonoBehaviour:
   actionClip: {fileID: 0}
   messageOnInteract: 0
   text: {fileID: 1730343426}
-  message: Szolid
+  message: 
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!82 &1172131970
 AudioSource:
   m_ObjectHideFlags: 0
@@ -107925,8 +108048,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46019983, y: -0.18145013, z: 0}
-    m_Extent: {x: 6.5527, y: 7.70875, z: 0}
+    m_Center: {x: 0.46235013, y: -0.1787498, z: 0}
+    m_Extent: {x: 6.5595503, y: 7.69925, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -108326,13 +108449,19 @@ MonoBehaviour:
   messageOnInteract: 0
   text: {fileID: 1730343426}
   message: "Valami iszonyat b\xFCd\xF6s..."
+  guardsMessage: "Ig\xE9nytelenek..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1207702707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108948,13 +109077,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Ha j\xF3l l\xE1tom abba van csont..."
+  guardsMessage: "Mi\xE9rt vagyok \xE9n itt egy\xE1ltal\xE1n?"
   timeToDeactivateText: 3
   hasHoverItem: 1
   hoverItem: {fileID: 1310289760}
   actionType: 1
   interactableGameObject: {fileID: 2082468970}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 1
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1229827279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -109629,13 +109764,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1260767690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -110282,14 +110423,20 @@ MonoBehaviour:
   actionClip: {fileID: 0}
   messageOnInteract: 0
   text: {fileID: 1730343426}
-  message: Szolid
+  message: 
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
-  actionType: 2
+  actionType: 3
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 1
+  itemForGuard: 1
+  itemForPlayer: 0
 --- !u!1 &1303097856
 GameObject:
   m_ObjectHideFlags: 0
@@ -110345,13 +110492,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "A cell\xE1m ajtaja..."
+  guardsMessage: "A rab cell\xE1ja..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1303097859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -110998,13 +111151,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Valami iszonyat b\xFCd\xF6s..."
+  guardsMessage: "Ig\xE9nytelenek..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1328631550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -112666,8 +112825,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46044993, y: -0.18225002, z: 0}
-    m_Extent: {x: 6.55175, y: 7.70215, z: 0}
+    m_Center: {x: 0.4621501, y: -0.18519998, z: 0}
+    m_Extent: {x: 6.55025, y: 7.7068996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -112767,7 +112926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToStart: 8
   sleepTime: 5
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 1425946461}
 --- !u!60 &1407563541
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -113872,8 +114031,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45694995, y: -0.17810011, z: 0}
-    m_Extent: {x: 6.5541496, y: 7.7015, z: 0}
+    m_Center: {x: 0.46484995, y: -0.1731, z: 0}
+    m_Extent: {x: 6.54605, y: 7.71, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -114707,13 +114866,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "\xDCdv a 17-es v\xE1rosban..."
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 1
   interactableGameObject: {fileID: 2083965562}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!212 &1509472802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -115469,13 +115634,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1535149156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -115996,14 +116167,20 @@ MonoBehaviour:
   actionClip: {fileID: 0}
   messageOnInteract: 0
   text: {fileID: 1730343426}
-  message: Szolid
+  message: 
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!1 &1569275803
 GameObject:
   m_ObjectHideFlags: 0
@@ -116295,7 +116472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToStart: 8
   sleepTime: 5
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 1425946461}
 --- !u!60 &1577092110
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -116583,8 +116760,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46035004, y: -0.18164992, z: 0}
-    m_Extent: {x: 6.56045, y: 7.7009497, z: 0}
+    m_Center: {x: 0.47364998, y: -0.1807499, z: 0}
+    m_Extent: {x: 6.55505, y: 7.70605, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -121904,13 +122081,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "K\xF6zel a szabads\xE1g..."
+  guardsMessage: ...
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1604820609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122229,14 +122412,20 @@ MonoBehaviour:
   actionClip: {fileID: 0}
   messageOnInteract: 0
   text: {fileID: 1730343426}
-  message: Szolid
+  message: 
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!1 &1620836637
 GameObject:
   m_ObjectHideFlags: 0
@@ -124105,13 +124294,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1712991754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -125345,9 +125540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1bd107fe2321414e90729787be71dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: 
-  maxSize: 0
-  FlowerInventory: {fileID: 0}
+  items: []
+  FlowerInventory: {fileID: 32012932}
 --- !u!1 &1753600244
 GameObject:
   m_ObjectHideFlags: 0
@@ -127666,13 +127860,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1827613582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127993,8 +128193,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4584999, y: -0.18315005, z: 0}
-    m_Extent: {x: 6.5587, y: 7.70255, z: 0}
+    m_Center: {x: 0.46440005, y: -0.1795001, z: 0}
+    m_Extent: {x: 6.5607004, y: 7.7076, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -128144,13 +128344,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1840995449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -129318,13 +129524,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Ezen a j\xE1raton eljuthatok a konyh\xE1ba..."
+  guardsMessage: "Konyh\xE1hoz vezet\u0151 j\xE1rat..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1877761989
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -129980,13 +130192,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: Egy kotta...
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 1
   hoverItem: {fileID: 874271489}
   actionType: 1
   interactableGameObject: {fileID: 283069307}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1920347864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -130140,13 +130358,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1923257951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -130537,13 +130761,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "A smasszerek szob\xE1ja..."
+  guardsMessage: "A smasszerek szob\xE1ja..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 1
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &1945004867
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -141617,13 +141847,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva van a r\xE1cs..."
+  guardsMessage: "Z\xE1rva van a r\xE1cs..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &2022394200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142805,14 +143041,20 @@ MonoBehaviour:
   actionClip: {fileID: 0}
   messageOnInteract: 0
   text: {fileID: 1730343426}
-  message: Szolid
+  message: 
+  guardsMessage: 
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 2
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!1 &2082468970
 GameObject:
   m_ObjectHideFlags: 0
@@ -143549,13 +143791,19 @@ MonoBehaviour:
   messageOnInteract: 1
   text: {fileID: 1730343426}
   message: "Z\xE1rva..."
+  guardsMessage: "Z\xE1rva..."
   timeToDeactivateText: 3
   hasHoverItem: 0
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
   isOnlyForGuard: 0
+  isOnlyForPrisoner: 0
   dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
 --- !u!61 &2099868536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144210,7 +144458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToStart: 3
   sleepTime: 5
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 1425946461}
 --- !u!60 &2135004237
 PolygonCollider2D:
   m_ObjectHideFlags: 0

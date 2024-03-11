@@ -16,13 +16,21 @@ public class CheckTile : MonoBehaviour
     public bool messageOnInteract;
     public TMP_Text text;
     public string message;
+    public string guardsMessage;
     public int timeToDeactivateText;
     public bool hasHoverItem;
     public GameObject hoverItem;
     public ActionTypes actionType;
     public GameObject interactableGameObject;
     public bool isOnlyForGuard;
+    public bool isOnlyForPrisoner;
     public bool dontCheckDistance = false;
+    [SerializeField]
+    bool itemAdded = false;
+    public ItemTypes itemTypeToGive;
+    public bool itemForGuard;
+    public bool itemForPlayer;
+
     private void OnMouseOver()
     {
         if (hasHoverItem)
@@ -44,12 +52,14 @@ public class CheckTile : MonoBehaviour
             }
             if (messageOnInteract)
             {
-                CancelDeactivationInvoke();
-                CheckTileTextObserver.Subscribe(gameObject);
-                CheckTileTextObserver.AlertObserver(gameObject);
-                text.text = message;
-                text.gameObject.SetActive(true);
-                Invoke(nameof(DeactivateText), timeToDeactivateText);
+                if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Guard)
+                {
+                    CallMessage(guardsMessage);
+                }
+                else
+                {
+                    CallMessage(message);
+                }
             }
         }
         if (Input.GetMouseButtonDown(1))
@@ -63,12 +73,16 @@ public class CheckTile : MonoBehaviour
                     }
                     else if (isOnlyForGuard)
                     {
-                        CancelDeactivationInvoke();
-                        CheckTileTextObserver.Subscribe(gameObject);
-                        CheckTileTextObserver.AlertObserver(gameObject);
-                        text.text = "Nekem nincs ehhez hozzáférésem...";
-                        text.gameObject.SetActive(true);
-                        Invoke(nameof(DeactivateText), timeToDeactivateText);
+                        CallMessage("Nekem nincs ehhez hozzáférésem...");
+                        if (!audioSource.isPlaying)
+                        {
+                            audioSource.clip = actionClip;
+                            audioSource.Play();
+                        };
+                    }
+                    else if(isOnlyForPrisoner && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Guard)
+                    {
+                        CallMessage("Ez nem az én feladatom...");
                         if (!audioSource.isPlaying)
                         {
                             audioSource.clip = actionClip;
@@ -81,8 +95,60 @@ public class CheckTile : MonoBehaviour
                     }
                     break;
                 case ActionTypes.CheckInteractableItem:
-                    interactableGameObject.SetActive(true);
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().canMove = false;
+                    if (isOnlyForPrisoner && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Guard)
+                    {
+                        CallMessage("Ez nem az én feladatom...");
+                        if (!audioSource.isPlaying && actionClip != null)
+                        {
+                            audioSource.clip = actionClip;
+                            audioSource.Play();
+                        };
+                    }
+                    else if(isOnlyForGuard && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType != PlayerType.Guard)
+                    {
+                        CallMessage("Ez nem az én feladatom...");
+                        if (!audioSource.isPlaying && actionClip != null)
+                        {
+                            audioSource.clip = actionClip;
+                            audioSource.Play();
+                        };
+                    }
+                    else
+                    {
+                        interactableGameObject.SetActive(true);
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().canMove = false;
+                    }
+                    break;
+                case ActionTypes.PlantInventoryInteract:
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().PlaceItemsToFlower(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType);
+                    break;
+                case ActionTypes.GetItemByAction:
+                    if (isOnlyForPrisoner && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Guard)
+                    {
+                        CallMessage("Ez nem az én feladatom...");
+                        if (!audioSource.isPlaying && actionClip != null)
+                        {
+                            audioSource.clip = actionClip;
+                            audioSource.Play();
+                        };
+                    }
+                    else if (isOnlyForGuard && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType != PlayerType.Guard)
+                    {
+                        CallMessage("Ez nem az én feladatom...");
+                        if (!audioSource.isPlaying && actionClip != null)
+                        {
+                            audioSource.clip = actionClip;
+                            audioSource.Play();
+                        };
+                    }
+                    else
+                    {
+                        if (!itemAdded)
+                        {
+                            GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().AddItem(new Items(itemTypeToGive, itemForGuard, itemForPlayer));
+                            itemAdded = true;
+                        }
+                    }
                     break;
                 default:
                     break;
@@ -95,6 +161,15 @@ public class CheckTile : MonoBehaviour
         }
     }
 
+    void CallMessage(string message)
+    {
+        CancelDeactivationInvoke();
+        CheckTileTextObserver.Subscribe(gameObject);
+        CheckTileTextObserver.AlertObserver(gameObject);
+        text.text = message;
+        text.gameObject.SetActive(true);
+        Invoke(nameof(DeactivateText), timeToDeactivateText);
+    }
 
     private void OnMouseExit()
     {

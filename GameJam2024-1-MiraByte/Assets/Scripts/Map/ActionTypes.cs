@@ -6,5 +6,7 @@ public enum ActionTypes
 {
     DoorInteract,
     CheckInteractableItem,
+    PlantInventoryInteract,
+    GetItemByAction,
     None
 }
