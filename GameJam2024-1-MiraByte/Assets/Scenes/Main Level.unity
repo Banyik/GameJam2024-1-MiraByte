@@ -322,6 +322,7 @@ MonoBehaviour:
   needItemForAction: 1
   neededItemType: 1
   messageIfItemIsMissing: Kell ehhez egy kulcs...
+  DestroyOnPickUp: 0
 --- !u!82 &13822470
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5792,6 +5793,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!114 &32012938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6406,8 +6408,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46950006, y: -0.18365002, z: 0}
-    m_Extent: {x: 6.5544, y: 7.71045, z: 0}
+    m_Center: {x: 0.4626999, y: -0.17620015, z: 0}
+    m_Extent: {x: 6.5552, y: 7.7021, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8188,6 +8190,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &116123328
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8759,6 +8762,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &137742153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8972,6 +8976,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &138397107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9537,8 +9542,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46420002, y: -0.1803, z: 0}
-    m_Extent: {x: 6.5641, y: 7.7131996, z: 0}
+    m_Center: {x: 0.46940017, y: -0.18009996, z: 0}
+    m_Extent: {x: 6.5514, y: 7.7039, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9946,8 +9951,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46194983, y: -0.18069983, z: 0}
-    m_Extent: {x: 6.55515, y: 7.7093, z: 0}
+    m_Center: {x: 0.4668498, y: -0.18484998, z: 0}
+    m_Extent: {x: 6.55375, y: 7.7028503, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10342,8 +10347,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46335006, y: -0.18409991, z: 0}
-    m_Extent: {x: 6.55225, y: 7.7111998, z: 0}
+    m_Center: {x: 0.46949983, y: -0.18534994, z: 0}
+    m_Extent: {x: 6.5566998, y: 7.70785, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -32634,6 +32639,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &266497687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32988,6 +32994,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!1 &267743301
 GameObject:
   m_ObjectHideFlags: 0
@@ -33404,6 +33411,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &281888097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34144,6 +34152,134 @@ Transform:
   - {fileID: 666009816}
   m_Father: {fileID: 1519657684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302662836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302662837}
+  - component: {fileID: 302662838}
+  m_Layer: 0
+  m_Name: PickUpSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302662837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302662836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 436809349}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &302662838
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302662836}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2152095908c36b94cbefdb70a3957b5a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &305533645
 GameObject:
   m_ObjectHideFlags: 0
@@ -45030,8 +45166,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46009994, y: -0.17750001, z: 0}
-    m_Extent: {x: 6.5546, y: 7.7138996, z: 0}
+    m_Center: {x: 0.47004986, y: -0.18444991, z: 0}
+    m_Extent: {x: 6.55825, y: 7.70875, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -45417,6 +45553,7 @@ Transform:
   - {fileID: 1799870194}
   - {fileID: 463188019}
   - {fileID: 1725917120}
+  - {fileID: 302662837}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &443889094
@@ -55351,6 +55488,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &459216439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61119,6 +61257,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &485385668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67434,8 +67573,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45985007, y: -0.18209982, z: 0}
-    m_Extent: {x: 6.5548496, y: 7.704, z: 0}
+    m_Center: {x: 0.4639001, y: -0.17340016, z: 0}
+    m_Extent: {x: 6.5474, y: 7.7052, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -73746,6 +73885,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &677032084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73959,6 +74099,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &679105279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74862,8 +75003,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46284986, y: -0.18484998, z: 0}
-    m_Extent: {x: 6.5556498, y: 7.70115, z: 0}
+    m_Center: {x: 0.46714997, y: -0.18674994, z: 0}
+    m_Extent: {x: 6.5619497, y: 7.70635, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -75067,6 +75208,177 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 3.8454971, y: 7.006592}
+  m_EdgeRadius: 0
+--- !u!1 &751343824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751343825}
+  - component: {fileID: 751343826}
+  - component: {fileID: 751343828}
+  - component: {fileID: 751343827}
+  m_Layer: 0
+  m_Name: fishing_rod
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &751343825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751343824}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -170.24, y: 11.76, z: 0.22225511}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1766825083}
+  m_Father: {fileID: 1143655361}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &751343826
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751343824}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fd76e49b321e77e4e92d693cb84b31ab, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.25, y: 0.19}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &751343827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751343824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1bac63c493309e4a9ce70ef1967b264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckTileTextObserver: {fileID: 2049653885}
+  TileChanger: {fileID: 0}
+  playSoundOnInteraction: 0
+  playSoundOnAction: 0
+  audioSource: {fileID: 302662838}
+  interactionClip: {fileID: 0}
+  actionClip: {fileID: 0}
+  messageOnInteract: 1
+  text: {fileID: 1730343426}
+  message: "Egy horg\xE1szbot..."
+  guardsMessage: Ezt minek hagyta itt?
+  timeToDeactivateText: 3
+  hasHoverItem: 1
+  hoverItem: {fileID: 1766825082}
+  actionType: 3
+  interactableGameObject: {fileID: 0}
+  isOnlyForGuard: 0
+  isOnlyForPrisoner: 1
+  dontCheckDistance: 0
+  itemAdded: 0
+  itemTypeToGive: 0
+  itemForGuard: 0
+  itemForPlayer: 0
+  needItemForAction: 0
+  neededItemType: 0
+  messageIfItemIsMissing: 
+  DestroyOnPickUp: 1
+--- !u!61 &751343828
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751343824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5625, y: 1.1875}
+    newSize: {x: 0.25, y: 0.19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5625, y: 1.1875}
   m_EdgeRadius: 0
 --- !u!1 &754152424
 GameObject:
@@ -79381,8 +79693,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.47000003, y: -0.18359995, z: 0}
-    m_Extent: {x: 6.5515003, y: 7.7097, z: 0}
+    m_Center: {x: 0.46615005, y: -0.18079996, z: 0}
+    m_Extent: {x: 6.54735, y: 7.7094, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -80000,8 +80312,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46694994, y: -0.18059993, z: 0}
-    m_Extent: {x: 6.56135, y: 7.7084, z: 0}
+    m_Center: {x: 0.45835018, y: -0.17685008, z: 0}
+    m_Extent: {x: 6.55475, y: 7.71445, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -80919,6 +81231,7 @@ Transform:
   m_Children:
   - {fileID: 1312349730}
   - {fileID: 2116886574}
+  - {fileID: 1143655361}
   m_Father: {fileID: 436809349}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &847498684
@@ -81085,8 +81398,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4684, y: -0.18175006, z: 0}
-    m_Extent: {x: 6.5539, y: 7.70345, z: 0}
+    m_Center: {x: 0.46615005, y: -0.1803, z: 0}
+    m_Extent: {x: 6.5576496, y: 7.7082005, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -83207,8 +83520,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46295, y: -0.17980003, z: 0}
-    m_Extent: {x: 6.5618496, y: 7.6986, z: 0}
+    m_Center: {x: 0.46054983, y: -0.18525004, z: 0}
+    m_Extent: {x: 6.55755, y: 7.70555, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -84184,6 +84497,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &962987721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84416,6 +84730,36 @@ Tilemap:
   m_GameObject: {fileID: 976737822}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -122, y: 68, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -120, y: 68, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -118, y: 68, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 147, y: 149, z: 0}
     second:
       serializedVersion: 2
@@ -84446,8 +84790,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: 494c1b0411f448f479cba6a6f1a1525b, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: e8148bd5f3ead174cb214fff16e4b801, type: 2}
   m_TileSpriteArray:
@@ -84459,12 +84803,12 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: 2085454384, guid: 2afd1ac6f3ee7ba43a31c9d2ca7f5427, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -983635443, guid: 115acd1973ba9c84ab9b63381454f1db, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2
+  - m_RefCount: 5
     m_Data:
       e00: 1
       e01: 0
@@ -84483,13 +84827,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2
+  - m_RefCount: 5
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 155, y: 150, z: 1}
+  m_Origin: {x: -122, y: 0, z: 0}
+  m_Size: {x: 277, y: 150, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -90902,6 +91246,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!1 &1036194588
 GameObject:
   m_ObjectHideFlags: 0
@@ -95704,6 +96049,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1041060535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -96522,8 +96868,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46125007, y: -0.18195009, z: 0}
-    m_Extent: {x: 6.5513496, y: 7.70335, z: 0}
+    m_Center: {x: 0.4632001, y: -0.1796, z: 0}
+    m_Extent: {x: 6.5586, y: 7.7106, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -96612,6 +96958,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1083120193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -96932,8 +97279,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46714997, y: -0.17079997, z: 0}
-    m_Extent: {x: 6.5577497, y: 7.7059, z: 0}
+    m_Center: {x: 0.46435, y: -0.17879987, z: 0}
+    m_Extent: {x: 6.5610504, y: 7.7132998, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -97750,6 +98097,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1106180095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -103098,6 +103446,38 @@ Transform:
   - {fileID: 765414720}
   - {fileID: 561084808}
   m_Father: {fileID: 1518741458}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1143655360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143655361}
+  m_Layer: 0
+  m_Name: Cell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1143655361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143655360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 751343825}
+  m_Father: {fileID: 846947063}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1144460988
 GameObject:
@@ -109004,6 +109384,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!82 &1172131970
 AudioSource:
   m_ObjectHideFlags: 0
@@ -109808,8 +110189,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46490002, y: -0.1803, z: 0}
-    m_Extent: {x: 6.5611, y: 7.7102003, z: 0}
+    m_Center: {x: 0.4613998, y: -0.18809986, z: 0}
+    m_Extent: {x: 6.5532, y: 7.7058, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -110302,6 +110683,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1207702707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -110936,6 +111318,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1229827279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111703,6 +112086,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1260767690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -112366,6 +112750,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!1 &1303097856
 GameObject:
   m_ObjectHideFlags: 0
@@ -112437,6 +112822,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1303097859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -113099,6 +113485,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1328631550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -114760,8 +115147,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4626999, y: -0.17739987, z: 0}
-    m_Extent: {x: 6.558, y: 7.7125998, z: 0}
+    m_Center: {x: 0.46705008, y: -0.17315006, z: 0}
+    m_Extent: {x: 6.54855, y: 7.70655, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -115966,8 +116353,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46755004, y: -0.17449999, z: 0}
-    m_Extent: {x: 6.5570498, y: 7.7059, z: 0}
+    m_Center: {x: 0.47020006, y: -0.1867001, z: 0}
+    m_Extent: {x: 6.5572, y: 7.7066, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -116817,6 +117204,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!212 &1509472802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -117467,6 +117855,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1535149156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -118004,6 +118393,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!1 &1569275803
 GameObject:
   m_ObjectHideFlags: 0
@@ -118583,8 +118973,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46044993, y: -0.1740501, z: 0}
-    m_Extent: {x: 6.5583496, y: 7.7028503, z: 0}
+    m_Center: {x: 0.46720004, y: -0.18169999, z: 0}
+    m_Extent: {x: 6.5608997, y: 7.7061005, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -123920,6 +124310,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1604820609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124255,6 +124646,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!1 &1620836637
 GameObject:
   m_ObjectHideFlags: 0
@@ -126139,6 +126531,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1712991754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127682,6 +128075,90 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1766825082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766825083}
+  - component: {fileID: 1766825084}
+  m_Layer: 0
+  m_Name: fishing_rod_outline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1766825083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766825082}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.007, y: -0.031, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 751343825}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1766825084
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766825082}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 40
+  m_Sprite: {fileID: 21300000, guid: 37a03da0ade5ef941a0026821fa97693, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.27, y: 0.22}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1771411480
 GameObject:
   m_ObjectHideFlags: 0
@@ -129573,6 +130050,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1827613582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -129893,8 +130371,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4656999, y: -0.1789999, z: 0}
-    m_Extent: {x: 6.5598, y: 7.7118, z: 0}
+    m_Center: {x: 0.46155, y: -0.18304992, z: 0}
+    m_Extent: {x: 6.5533504, y: 7.7058496, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -130060,6 +130538,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1840995449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131243,6 +131722,7 @@ MonoBehaviour:
   needItemForAction: 1
   neededItemType: 0
   messageIfItemIsMissing: "M\xE9g meg kell szereznem a horg\xE1szbotot..."
+  DestroyOnPickUp: 0
 --- !u!61 &1877761989
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131914,6 +132394,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1920347864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -132083,6 +132564,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1923257951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -132489,6 +132971,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &1945004867
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143578,6 +144061,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &2022394200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144776,6 +145260,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!1 &2082468970
 GameObject:
   m_ObjectHideFlags: 0
@@ -145528,6 +146013,7 @@ MonoBehaviour:
   needItemForAction: 0
   neededItemType: 0
   messageIfItemIsMissing: 
+  DestroyOnPickUp: 0
 --- !u!61 &2099868536
 BoxCollider2D:
   m_ObjectHideFlags: 0
