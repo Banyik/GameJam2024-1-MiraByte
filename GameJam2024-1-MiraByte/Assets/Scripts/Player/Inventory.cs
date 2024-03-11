@@ -1,28 +1,62 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Player;
 
 public class Inventory : MonoBehaviour
 {
-    public List<ItemTypes> items = new List<ItemTypes>();
-    public int maxSize;
+    public List<Items> items = new List<Items>();
     public GameObject FlowerInventory;
-    public void AddItem(ItemTypes item)
+    public void AddItem(Items item)
     {
-        if(items.Count < maxSize)
-        {
-            items.Add(item);
-        }
+        items.Add(item);
     }
 
-    public void RemoveItem(ItemTypes item)
+    public void RemoveItem(Items item)
     {
         items.Remove(item);
     }
 
-    public void AddItemToOtherInventory(ItemTypes item)
+    public void PlaceItemsToFlower(PlayerType type)
     {
-        FlowerInventory.GetComponent<Inventory>().AddItem(item);
-        RemoveItem(item);
+        if(type == PlayerType.Prisoner)
+        {
+            foreach (var item in new List<Items>(items))
+            {
+                if (item.neededToPlaceDownByPrisoner)
+                {
+                    FlowerInventory.GetComponent<Inventory>().AddItem(item);
+                    RemoveItem(item);
+                }
+            }
+            foreach (var item in new List<Items>(FlowerInventory.GetComponent<Inventory>().items))
+            {
+                if (item.neededToPlaceDownByGuard)
+                {
+                    AddItem(item);
+                    FlowerInventory.GetComponent<Inventory>().RemoveItem(item);
+                }
+            }
+        }
+        else if (type == PlayerType.Guard)
+        {
+            foreach (var item in new List<Items>(items))
+            {
+                if (item.neededToPlaceDownByGuard)
+                {
+                    FlowerInventory.GetComponent<Inventory>().AddItem(item);
+                    RemoveItem(item);
+                }
+            }
+            foreach (var item in new List<Items>(FlowerInventory.GetComponent<Inventory>().items))
+            {
+                if (item.neededToPlaceDownByPrisoner)
+                {
+                    AddItem(item);
+                    FlowerInventory.GetComponent<Inventory>().RemoveItem(item);
+                }
+            }
+        }
     }
+
 }
