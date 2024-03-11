@@ -22,7 +22,6 @@ public class CheckTile : MonoBehaviour
     public ActionTypes actionType;
     public GameObject interactableGameObject;
     public bool isOnlyForGuard;
-    public bool dontCheckDistance = false;
     private void OnMouseOver()
     {
         if (hasHoverItem)
@@ -31,7 +30,7 @@ public class CheckTile : MonoBehaviour
         }
         Vector3 mousePosition = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>().ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0f;
-        if(Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, mousePosition) > 7.5f && !dontCheckDistance)
+        if(Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position, mousePosition) > 7.5f)
         {
             return;
         }
