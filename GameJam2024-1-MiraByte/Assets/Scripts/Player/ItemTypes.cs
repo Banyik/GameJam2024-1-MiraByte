@@ -9,5 +9,7 @@ public enum ItemTypes
     Bone,
     Crowbar,
     MeatlDetector,
-
+    Money,
+    Tape,
+    Lockerkey
 }
