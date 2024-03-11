@@ -30,6 +30,8 @@ public class CameraBehaviour : MonoBehaviour
     {
         if((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive)
         {
+            GameObject.Find("PauseMenu").SetActive(false);
+            GameObject.Find("List").SetActive(false);
             Time.timeScale = 0f;
             gameOverMenu.SetActive(true);
         }
@@ -39,6 +41,8 @@ public class CameraBehaviour : MonoBehaviour
     {
         if ((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive)
         {
+            GameObject.Find("PauseMenu").SetActive(false);
+            GameObject.Find("List").SetActive(false);
             Time.timeScale = 0f;
             gameOverMenu.SetActive(true);
         }
