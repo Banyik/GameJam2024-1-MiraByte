@@ -42,6 +42,7 @@ public class DogBehaviour : MonoBehaviour
                     source.Play();
                 }
                 hasBone = true;
+                return;
             }
             if (source.clip != bark)
             {
