@@ -19,6 +19,8 @@ namespace Player
         public float walkTime;
         public bool canMove = true;
 
+        public bool CanMove { get => canMove; set => canMove = value; }
+
         void Start()
         {
             playerAnimator = gameObject.GetComponent<Animator>();
