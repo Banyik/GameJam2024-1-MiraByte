@@ -3,18 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - mininpcwall
+  - PlayerVisibility
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - MiniNPC
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PlayerVisibility
+  - Cam
+  - TilesToCheck
   - 
   - 
   - 
