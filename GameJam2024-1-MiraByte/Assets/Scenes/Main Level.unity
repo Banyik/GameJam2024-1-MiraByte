@@ -145726,7 +145726,7 @@ MonoBehaviour:
   hoverItem: {fileID: 0}
   actionType: 0
   interactableGameObject: {fileID: 0}
-  isOnlyForGuard: 0
+  isOnlyForGuard: 1
   isOnlyForPrisoner: 0
   dontCheckDistance: 0
   itemAdded: 0
