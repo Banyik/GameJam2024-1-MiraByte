@@ -331,7 +331,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u0150r:\n(bel\xE9gz\xE9s\u2026 kil\xE9gz\xE9s) Khm, nem az \xE9n csukl\xF3mon
-    f\xE9nylik a bilincs m\xE9lyen tisztelt Igazgat\xF3 \xDAr.."
+    f\xE9nylik a bilincs m\xE9lyen tisztelt Igazgat\xF3 \xDAr..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -2291,7 +2291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1125553625
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2329,8 +2329,8 @@ MonoBehaviour:
   - {fileID: 1736481239}
   - {fileID: 978235516}
   - {fileID: 274798198}
-  - {fileID: 454146149}
   - {fileID: 170454027}
+  - {fileID: 454146149}
   - {fileID: 1858640295}
   - {fileID: 2081353383}
   - {fileID: 121818454}
