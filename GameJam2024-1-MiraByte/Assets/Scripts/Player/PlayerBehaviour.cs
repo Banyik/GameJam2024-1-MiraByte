@@ -31,6 +31,8 @@ namespace Player
                     playerAnimator.runtimeAnimatorController = prisonerAnimator;
                     break;
                 case PlayerType.Guard:
+                    player = new Prisoner(5, playerType);
+                    playerAnimator.runtimeAnimatorController = guardAnimator;
                     break;
                 default:
                     break;
