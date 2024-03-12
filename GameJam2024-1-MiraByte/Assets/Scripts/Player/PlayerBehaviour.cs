@@ -19,6 +19,8 @@ namespace Player
         public float walkTime;
         public bool canMove = true;
 
+        public bool CanMove { get => canMove; set => canMove = value; }
+
         void Start()
         {
             playerAnimator = gameObject.GetComponent<Animator>();
@@ -29,6 +31,8 @@ namespace Player
                     playerAnimator.runtimeAnimatorController = prisonerAnimator;
                     break;
                 case PlayerType.Guard:
+                    player = new Prisoner(5, playerType);
+                    playerAnimator.runtimeAnimatorController = guardAnimator;
                     break;
                 default:
                     break;

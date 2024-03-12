@@ -8,8 +8,9 @@ public enum ItemTypes
     FuseBoxKey,
     Bone,
     Crowbar,
-    MeatlDetector,
-    Money,
-    Tape,
-    Lockerkey
+    MetalDetector,
+    MoneyAndTape,
+    LockerKey,
+    DeskKey,
+    NightVisionGoogles
 }

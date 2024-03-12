@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Player;
 
 
 public class CameraBehaviour : MonoBehaviour
@@ -28,8 +29,9 @@ public class CameraBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive)
+        if((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive && GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner)
         {
+            GameObject.Find("ScriptHandler").GetComponent<UIBehaviour>().DisableObjects();
             Time.timeScale = 0f;
             gameOverMenu.SetActive(true);
         }
@@ -37,8 +39,9 @@ public class CameraBehaviour : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if ((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive)
+        if ((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive && GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner)
         {
+            GameObject.Find("ScriptHandler").GetComponent<UIBehaviour>().DisableObjects();
             Time.timeScale = 0f;
             gameOverMenu.SetActive(true);
         }

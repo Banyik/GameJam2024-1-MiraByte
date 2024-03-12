@@ -11,6 +11,9 @@ public class KitchenMiniGame : MonoBehaviour
     public GameObject Minigame;
     public GameObject[] objectsToActivate;
     public GameObject[] objectsToDeactivate;
+
+    public GameObject Player;
+    public GameObject Sound;
     public void Try()
     {
         stop = true;
@@ -80,6 +83,8 @@ public class KitchenMiniGame : MonoBehaviour
                     {
                         item.SetActive(false);
                     }
+                    Player.GetComponent<Inventory>().AddItem(new Items(ItemTypes.Bone, false, false));
+                    Sound.GetComponent<AudioSource>().Play();
                     Minigame.SetActive(false);
                 }
                 stop = false;

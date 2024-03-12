@@ -7,8 +7,14 @@ public class Inventory : MonoBehaviour
 {
     public List<Items> items = new List<Items>();
     public GameObject FlowerInventory;
+    public ListHandler handler;
     public void AddItem(Items item)
     {
+        PlayerBehaviour playerBehaviour;
+        if(gameObject.TryGetComponent<PlayerBehaviour>(out playerBehaviour) && playerBehaviour.playerType == PlayerType.Prisoner)
+        {
+            handler.GotItem(item.item);
+        }
         items.Add(item);
     }
 
