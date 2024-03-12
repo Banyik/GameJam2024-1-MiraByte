@@ -26,7 +26,6 @@ public class MainMenu : MonoBehaviour
     public void QuitApp() 
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
     public void ShowPreMenu() 
     {
