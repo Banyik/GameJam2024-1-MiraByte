@@ -12,5 +12,5 @@ public enum ItemTypes
     MoneyAndTape,
     LockerKey,
     DeskKey,
-    NightVisionGoogles
+    NightVisionGoogles,
 }

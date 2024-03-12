@@ -36,6 +36,8 @@ public class CheckTile : MonoBehaviour
     public string messageIfItemIsMissing;
     public bool DestroyOnPickUp;
 
+    public string Message { get => message; set => message = value; }
+
     private void OnMouseOver()
     {
         if (hasHoverItem)
@@ -166,6 +168,11 @@ public class CheckTile : MonoBehaviour
                     {
                         if (!itemAdded)
                         {
+                            if (needItemForAction && GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().items.Where(x => x.item == neededItemType).ToList().Count == 0)
+                            {
+                                CallMessage(messageIfItemIsMissing);
+                                return;
+                            }
                             GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().AddItem(new Items(itemTypeToGive, itemForGuard, itemForPlayer));
                             itemAdded = true;
                             GameObject.Find("PickUpSound").GetComponent<AudioSource>().Play();
