@@ -224,7 +224,7 @@ public class CheckTile : MonoBehaviour
         CheckTileTextObserver.UnSubscribe(gameObject);
     }
 
-    void DeactivateText()
+    public void DeactivateText()
     {
         text.gameObject.SetActive(false);
         CheckTileTextObserver.UnSubscribe(gameObject);

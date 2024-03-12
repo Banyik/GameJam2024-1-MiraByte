@@ -43,7 +43,7 @@ public class TriggerThought : MonoBehaviour
         CheckTileTextObserver.UnSubscribe(gameObject);
     }
 
-    void DeactivateText()
+    public void DeactivateText()
     {
         text.gameObject.SetActive(false);
         CheckTileTextObserver.UnSubscribe(gameObject);

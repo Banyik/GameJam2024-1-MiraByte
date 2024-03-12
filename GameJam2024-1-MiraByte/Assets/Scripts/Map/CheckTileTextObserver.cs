@@ -53,4 +53,22 @@ public class CheckTileTextObserver : MonoBehaviour
     {
         isAlerted = false;
     }
+
+    public void DeactivateLastCall()
+    {
+        CheckTile checkTile;
+        TriggerThought thought;
+        if(lastAlert != null)
+        {
+            if (lastAlert.TryGetComponent<CheckTile>(out checkTile) && checkTile.IsInvokingText())
+            {
+                checkTile.DeactivateText();
+            }
+            else if (lastAlert.TryGetComponent<TriggerThought>(out thought) && thought.IsInvokingText())
+            {
+                thought.DeactivateText();
+            }
+            lastAlert = null;
+        }
+    }
 }
