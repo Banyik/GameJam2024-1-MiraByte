@@ -16,7 +16,7 @@ public class startGameNovel : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && pages.Count - 1 == pageCount)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         if (Input.GetMouseButtonDown(0) && pages.Count - 1 > pageCount)
         {
