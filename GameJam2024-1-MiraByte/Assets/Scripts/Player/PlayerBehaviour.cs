@@ -18,6 +18,7 @@ namespace Player
         public AudioSource source;
         public float walkTime;
         public bool canMove = true;
+        public bool isUsingMetalDetector = false;
 
         public bool CanMove { get => canMove; set => canMove = value; }
 
@@ -90,6 +91,15 @@ namespace Player
         {
             source.clip = clips[Random.Range(0, clips.Count)];
             source.Play();
+        }
+
+        public void ActivateMetalDetector()
+        {
+            if(player.PlayerType == PlayerType.Prisoner && gameObject.activeInHierarchy)
+            {
+                isUsingMetalDetector = !isUsingMetalDetector;
+                playerAnimator.SetBool("usingMetalDetector", isUsingMetalDetector);
+            }
         }
     }
 }

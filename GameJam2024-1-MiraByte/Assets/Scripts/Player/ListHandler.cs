@@ -42,8 +42,8 @@ public class ListHandler : MonoBehaviour
                 TickForCrowbar.SetActive(true);
                 break;
             case ItemTypes.MetalDetector:
-                Bone.interactable = true;
-                TickForBone.SetActive(true);
+                MetalDetector.interactable = true;
+                TickForMetalDetector.SetActive(true);
                 break;
             case ItemTypes.MoneyAndTape:
                 Money.interactable = true;
