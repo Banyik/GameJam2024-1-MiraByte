@@ -1006,7 +1006,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2049653889}
         m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
         m_MethodName: SetDownLeverState
         m_Mode: 3
@@ -7277,8 +7277,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46494985, y: -0.18130016, z: 0}
-    m_Extent: {x: 6.55245, y: 7.7114, z: 0}
+    m_Center: {x: 0.47169995, y: -0.17094994, z: 0}
+    m_Extent: {x: 6.5559998, y: 7.70545, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9403,14 +9403,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2049653889}
+        m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
+        m_MethodName: SetDownLeverState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11248,8 +11248,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46405005, y: -0.17424989, z: 0}
-    m_Extent: {x: 6.5616503, y: 7.70765, z: 0}
+    m_Center: {x: 0.46634984, y: -0.18554997, z: 0}
+    m_Extent: {x: 6.54865, y: 7.70625, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11765,8 +11765,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46099997, y: -0.17700005, z: 0}
-    m_Extent: {x: 6.5493, y: 7.7079, z: 0}
+    m_Center: {x: 0.4707501, y: -0.17684984, z: 0}
+    m_Extent: {x: 6.5588503, y: 7.70785, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12375,8 +12375,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46464992, y: -0.18065, z: 0}
-    m_Extent: {x: 6.55805, y: 7.70205, z: 0}
+    m_Center: {x: 0.46734977, y: -0.17785001, z: 0}
+    m_Extent: {x: 6.5549498, y: 7.7077503, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -48606,8 +48606,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.47199988, y: -0.17910004, z: 0}
-    m_Extent: {x: 6.557, y: 7.7039, z: 0}
+    m_Center: {x: 0.4635501, y: -0.17610002, z: 0}
+    m_Extent: {x: 6.55975, y: 7.7071, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -65738,14 +65738,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2049653889}
+        m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
+        m_MethodName: SetUpLeverState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -71395,8 +71395,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46080017, y: -0.18694997, z: 0}
-    m_Extent: {x: 6.559, y: 7.70465, z: 0}
+    m_Center: {x: 0.47315, y: -0.1782, z: 0}
+    m_Extent: {x: 6.55435, y: 7.7075996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -76791,10 +76791,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2049653889}
+        m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
+        m_MethodName: SetDownLeverState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -77223,8 +77223,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4561, y: -0.17779994, z: 0}
-    m_Extent: {x: 6.5555, y: 7.7019997, z: 0}
+    m_Center: {x: 0.4577, y: -0.17855, z: 0}
+    m_Extent: {x: 6.5580997, y: 7.7105503, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -80037,8 +80037,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46455002, y: -0.17045021, z: 0}
-    m_Extent: {x: 6.54695, y: 7.70715, z: 0}
+    m_Center: {x: 0.46875, y: -0.1782, z: 0}
+    m_Extent: {x: 6.55145, y: 7.7127, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -85033,8 +85033,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46429992, y: -0.17409992, z: 0}
-    m_Extent: {x: 6.5472, y: 7.7043, z: 0}
+    m_Center: {x: 0.46404982, y: -0.17729998, z: 0}
+    m_Extent: {x: 6.56285, y: 7.7117, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -85230,8 +85230,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46449995, y: -0.17275, z: 0}
-    m_Extent: {x: 6.5629, y: 7.70665, z: 0}
+    m_Center: {x: 0.46379995, y: -0.18700004, z: 0}
+    m_Extent: {x: 6.5555, y: 7.7067003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -85849,8 +85849,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4619, y: -0.18304992, z: 0}
-    m_Extent: {x: 6.5615997, y: 7.7093496, z: 0}
+    m_Center: {x: 0.45735002, y: -0.17694998, z: 0}
+    m_Extent: {x: 6.5555496, y: 7.70005, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -87010,8 +87010,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4663999, y: -0.17965007, z: 0}
-    m_Extent: {x: 6.5509996, y: 7.69705, z: 0}
+    m_Center: {x: 0.46959996, y: -0.18215013, z: 0}
+    m_Extent: {x: 6.5586996, y: 7.69995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -89128,8 +89128,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46500015, y: -0.17755008, z: 0}
-    m_Extent: {x: 6.559, y: 7.7142496, z: 0}
+    m_Center: {x: 0.4692998, y: -0.18120003, z: 0}
+    m_Extent: {x: 6.553, y: 7.6993, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -90019,7 +90019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &917122527
 Transform:
   m_ObjectHideFlags: 0
@@ -90315,9 +90315,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2049653889}
         m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
-        m_MethodName: SetDownLeverState
+        m_MethodName: SetUpLeverState
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -105008,8 +105008,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4605, y: -0.18260002, z: 0}
-    m_Extent: {x: 6.5608997, y: 7.7088, z: 0}
+    m_Center: {x: 0.45674992, y: -0.18319988, z: 0}
+    m_Extent: {x: 6.55485, y: 7.7096, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -105741,8 +105741,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46644998, y: -0.17945004, z: 0}
-    m_Extent: {x: 6.5568504, y: 7.71045, z: 0}
+    m_Center: {x: 0.46679997, y: -0.17260003, z: 0}
+    m_Extent: {x: 6.5628996, y: 7.7064, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -117747,9 +117747,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2049653889}
         m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
-        m_MethodName: SetDownLeverState
+        m_MethodName: SetUpLeverState
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -119406,8 +119406,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46530008, y: -0.18545008, z: 0}
-    m_Extent: {x: 6.5488, y: 7.70145, z: 0}
+    m_Center: {x: 0.4695499, y: -0.18060017, z: 0}
+    m_Extent: {x: 6.5556498, y: 7.71, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -119891,8 +119891,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46584988, y: -0.1779499, z: 0}
-    m_Extent: {x: 6.55765, y: 7.70295, z: 0}
+    m_Center: {x: 0.47144985, y: -0.17494988, z: 0}
+    m_Extent: {x: 6.55545, y: 7.7122498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -120269,8 +120269,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46409988, y: -0.18394995, z: 0}
-    m_Extent: {x: 6.5629, y: 7.70405, z: 0}
+    m_Center: {x: 0.46274996, y: -0.18335009, z: 0}
+    m_Extent: {x: 6.54815, y: 7.71105, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -125543,8 +125543,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4683001, y: -0.17879987, z: 0}
-    m_Extent: {x: 6.557, y: 7.7025003, z: 0}
+    m_Center: {x: 0.46565008, y: -0.17884994, z: 0}
+    m_Extent: {x: 6.55435, y: 7.7114496, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -127228,8 +127228,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4705999, y: -0.17314982, z: 0}
-    m_Extent: {x: 6.5514, y: 7.70345, z: 0}
+    m_Center: {x: 0.4590001, y: -0.18000007, z: 0}
+    m_Extent: {x: 6.5513, y: 7.7017, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -130751,8 +130751,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46659994, y: -0.17324996, z: 0}
-    m_Extent: {x: 6.5631, y: 7.7030497, z: 0}
+    m_Center: {x: 0.46775007, y: -0.17755008, z: 0}
+    m_Extent: {x: 6.55575, y: 7.71165, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -139060,8 +139060,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.16365, y: -1.5671, z: 0}
-    m_Extent: {x: 13.23455, y: 11.4725, z: 0}
+    m_Center: {x: -1.1676502, y: -1.5624499, z: 0}
+    m_Extent: {x: 13.23905, y: 11.472549, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -140916,10 +140916,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2049653889}
+        m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
+        m_MethodName: SetUpLeverState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -142458,7 +142458,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2049653889}
         m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
         m_MethodName: SetDownLeverState
         m_Mode: 3
@@ -142920,8 +142920,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.47160006, y: -0.17925, z: 0}
-    m_Extent: {x: 6.5538, y: 7.71585, z: 0}
+    m_Center: {x: 0.46319985, y: -0.1809001, z: 0}
+    m_Extent: {x: 6.5521, y: 7.7057, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -143679,9 +143679,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2049653889}
         m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
-        m_MethodName: SetDownLeverState
+        m_MethodName: SetUpLeverState
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -146246,7 +146246,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2049653889}
         m_TargetAssemblyTypeName: FuseBoxLeverHandler, Assembly-CSharp
         m_MethodName: SetDownLeverState
         m_Mode: 3
