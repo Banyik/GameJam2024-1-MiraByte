@@ -26,7 +26,6 @@ public class CameraBehaviour : MonoBehaviour
         light2d.enabled = isActive;
         Invoke(nameof(Activate), sleepTime);
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive && GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner)
@@ -44,6 +43,19 @@ public class CameraBehaviour : MonoBehaviour
             GameObject.Find("ScriptHandler").GetComponent<UIBehaviour>().DisableObjects();
             Time.timeScale = 0f;
             gameOverMenu.SetActive(true);
+        }
+    }
+
+    private void Update()
+    {
+        if(gameObject.GetComponent<Collider2D>().IsTouching(GameObject.FindWithTag("Player").GetComponent<Collider2D>()) && isActive)
+        {
+            if(GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner)
+            {
+                GameObject.Find("ScriptHandler").GetComponent<UIBehaviour>().DisableObjects();
+                Time.timeScale = 0f;
+                gameOverMenu.SetActive(true);
+            }
         }
     }
 

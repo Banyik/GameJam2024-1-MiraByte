@@ -21,7 +21,7 @@ public class TriggerThought : MonoBehaviour
         {
             trigger.SetActive(true);
         }
-        else
+        else if(collision.tag == "Player" && collision.GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner)
         {
             CancelDeactivationInvoke();
             CheckTileTextObserver.Subscribe(gameObject);

@@ -75,6 +75,7 @@ public class KitchenMiniGame : MonoBehaviour
                 if (transform.localPosition.x >= -192 && transform.localPosition.x <= -58)
                 {
                     GameObject.Find("ScriptHandler").GetComponent<EnableWalking>().EnableMoving();
+                    GameObject.Find("ScriptHandler").GetComponent<UIBehaviour>().EnableObjects();
                     foreach (var item in objectsToActivate)
                     {
                         item.SetActive(true);
