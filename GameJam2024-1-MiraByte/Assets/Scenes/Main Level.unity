@@ -6115,6 +6115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlowerInventory: {fileID: 0}
+  handler: {fileID: 0}
 --- !u!1 &34809472
 GameObject:
   m_ObjectHideFlags: 0
@@ -7142,8 +7143,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46029997, y: -0.17995, z: 0}
-    m_Extent: {x: 6.5536, y: 7.70185, z: 0}
+    m_Center: {x: 0.45784998, y: -0.1789, z: 0}
+    m_Extent: {x: 6.55295, y: 7.7157, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8115,7 +8116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &89655436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9336,6 +9337,7 @@ GameObject:
   - component: {fileID: 110359011}
   - component: {fileID: 110359013}
   - component: {fileID: 110359012}
+  - component: {fileID: 110359014}
   m_Layer: 5
   m_Name: FishingRod
   m_TagString: Untagged
@@ -9360,7 +9362,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 134, y: 53}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 104.166664, y: 79.166664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &110359012
 MonoBehaviour:
@@ -9400,6 +9402,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110359010}
   m_CullTransparentMesh: 1
+--- !u!114 &110359014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110359010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 110359012}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &110704898
 GameObject:
   m_ObjectHideFlags: 0
@@ -11056,8 +11102,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4683001, y: -0.17925, z: 0}
-    m_Extent: {x: 6.5568, y: 7.71255, z: 0}
+    m_Center: {x: 0.45945, y: -0.17845011, z: 0}
+    m_Extent: {x: 6.55585, y: 7.70965, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11194,6 +11240,7 @@ GameObject:
   - component: {fileID: 165689628}
   - component: {fileID: 165689630}
   - component: {fileID: 165689629}
+  - component: {fileID: 165689631}
   m_Layer: 5
   m_Name: Bone
   m_TagString: Untagged
@@ -11218,7 +11265,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 155, y: 212}
-  m_SizeDelta: {x: 500, y: 500}
+  m_SizeDelta: {x: 480, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &165689629
 MonoBehaviour:
@@ -11258,6 +11305,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165689627}
   m_CullTransparentMesh: 1
+--- !u!114 &165689631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165689627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 165689629}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &178107542
 GameObject:
   m_ObjectHideFlags: 0
@@ -11528,8 +11619,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46559978, y: -0.17704988, z: 0}
-    m_Extent: {x: 6.5546, y: 7.70205, z: 0}
+    m_Center: {x: 0.46950006, y: -0.1815002, z: 0}
+    m_Extent: {x: 6.5552, y: 7.7084, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12138,8 +12229,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46155, y: -0.17965007, z: 0}
-    m_Extent: {x: 6.5568504, y: 7.70525, z: 0}
+    m_Center: {x: 0.46924996, y: -0.18350005, z: 0}
+    m_Extent: {x: 6.5602503, y: 7.7045, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12596,7 +12687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &209608738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34339,7 +34430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &220740029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34994,6 +35085,7 @@ GameObject:
   - component: {fileID: 250141435}
   - component: {fileID: 250141437}
   - component: {fileID: 250141436}
+  - component: {fileID: 250141438}
   m_Layer: 5
   m_Name: money
   m_TagString: Untagged
@@ -35018,7 +35110,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -711, y: -189}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 121.875, y: 65.625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250141436
 MonoBehaviour:
@@ -35058,6 +35150,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250141434}
   m_CullTransparentMesh: 1
+--- !u!114 &250141438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250141434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 250141436}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &266497684
 GameObject:
   m_ObjectHideFlags: 0
@@ -48232,8 +48368,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46915007, y: -0.18385005, z: 0}
-    m_Extent: {x: 6.55445, y: 7.71085, z: 0}
+    m_Center: {x: 0.46484995, y: -0.17674994, z: 0}
+    m_Extent: {x: 6.56155, y: 7.70525, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -71016,8 +71152,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46650004, y: -0.18149996, z: 0}
-    m_Extent: {x: 6.5612, y: 7.7009, z: 0}
+    m_Center: {x: 0.46379995, y: -0.17505002, z: 0}
+    m_Extent: {x: 6.5515, y: 7.7098503, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -76844,8 +76980,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45819998, y: -0.18389988, z: 0}
-    m_Extent: {x: 6.5545, y: 7.7085, z: 0}
+    m_Center: {x: 0.46420002, y: -0.18470001, z: 0}
+    m_Extent: {x: 6.5482, y: 7.7062, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -79658,8 +79794,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46600008, y: -0.1793499, z: 0}
-    m_Extent: {x: 6.5631, y: 7.70575, z: 0}
+    m_Center: {x: 0.46600008, y: -0.18065, z: 0}
+    m_Extent: {x: 6.5509, y: 7.69975, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -84654,8 +84790,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46400023, y: -0.18089986, z: 0}
-    m_Extent: {x: 6.5597, y: 7.7094, z: 0}
+    m_Center: {x: 0.46305013, y: -0.18230009, z: 0}
+    m_Extent: {x: 6.54895, y: 7.7023, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -84851,8 +84987,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46495008, y: -0.17955017, z: 0}
-    m_Extent: {x: 6.55045, y: 7.69765, z: 0}
+    m_Center: {x: 0.4638002, y: -0.16950011, z: 0}
+    m_Extent: {x: 6.5559998, y: 7.7067003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -85470,8 +85606,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4612, y: -0.18120003, z: 0}
-    m_Extent: {x: 6.5586996, y: 7.7014, z: 0}
+    m_Center: {x: 0.46759987, y: -0.17704988, z: 0}
+    m_Extent: {x: 6.5492, y: 7.6995497, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -86631,8 +86767,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4697001, y: -0.1884501, z: 0}
-    m_Extent: {x: 6.5530996, y: 7.70695, z: 0}
+    m_Center: {x: 0.4639001, y: -0.1740501, z: 0}
+    m_Extent: {x: 6.5512, y: 7.7079496, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -88749,8 +88885,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46615005, y: -0.18455005, z: 0}
-    m_Extent: {x: 6.54955, y: 7.7030497, z: 0}
+    m_Center: {x: 0.4612, y: -0.18149996, z: 0}
+    m_Extent: {x: 6.5571003, y: 7.7121, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -97102,7 +97238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1006006726
 RectTransform:
   m_ObjectHideFlags: 0
@@ -104629,8 +104765,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46449995, y: -0.17845011, z: 0}
-    m_Extent: {x: 6.5515, y: 7.69915, z: 0}
+    m_Center: {x: 0.46974993, y: -0.18289995, z: 0}
+    m_Extent: {x: 6.55725, y: 7.7101, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -105362,8 +105498,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4669001, y: -0.17785001, z: 0}
-    m_Extent: {x: 6.5516996, y: 7.70615, z: 0}
+    m_Center: {x: 0.46315002, y: -0.18295002, z: 0}
+    m_Extent: {x: 6.55375, y: 7.70365, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -105468,6 +105604,7 @@ GameObject:
   - component: {fileID: 1092031690}
   - component: {fileID: 1092031692}
   - component: {fileID: 1092031691}
+  - component: {fileID: 1092031693}
   m_Layer: 5
   m_Name: detector
   m_TagString: Untagged
@@ -105532,6 +105669,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092031689}
   m_CullTransparentMesh: 1
+--- !u!114 &1092031693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092031689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1092031691}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1096904137
 GameObject:
   m_ObjectHideFlags: 0
@@ -106271,6 +106452,7 @@ GameObject:
   - component: {fileID: 1107866074}
   - component: {fileID: 1107866076}
   - component: {fileID: 1107866075}
+  - component: {fileID: 1107866077}
   m_Layer: 5
   m_Name: crowbar
   m_TagString: Untagged
@@ -106295,7 +106477,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -670, y: -305}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 112.5, y: 93.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107866075
 MonoBehaviour:
@@ -106335,6 +106517,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107866073}
   m_CullTransparentMesh: 1
+--- !u!114 &1107866077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107866073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1107866075}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1111526780
 GameObject:
   m_ObjectHideFlags: 0
@@ -118467,7 +118693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1174324101
 AudioSource:
   m_ObjectHideFlags: 0
@@ -118577,6 +118803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlowerInventory: {fileID: 32012932}
+  handler: {fileID: 2049653892}
 --- !u!95 &1174324103
 Animator:
   serializedVersion: 5
@@ -118936,8 +119163,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4686501, y: -0.18060017, z: 0}
-    m_Extent: {x: 6.55875, y: 7.697, z: 0}
+    m_Center: {x: 0.46915007, y: -0.1780498, z: 0}
+    m_Extent: {x: 6.55205, y: 7.7122498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -119421,8 +119648,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.45985007, y: -0.17754984, z: 0}
-    m_Extent: {x: 6.5504503, y: 7.70505, z: 0}
+    m_Center: {x: 0.45529985, y: -0.18429995, z: 0}
+    m_Extent: {x: 6.5558, y: 7.7096, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -119799,8 +120026,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46340013, y: -0.17824984, z: 0}
-    m_Extent: {x: 6.5481997, y: 7.71525, z: 0}
+    m_Center: {x: 0.46359992, y: -0.1789, z: 0}
+    m_Extent: {x: 6.5622997, y: 7.7166996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -124208,7 +124435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1380921817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -124845,8 +125072,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46595, y: -0.18135, z: 0}
-    m_Extent: {x: 6.55375, y: 7.70665, z: 0}
+    m_Center: {x: 0.4705, y: -0.1794498, z: 0}
+    m_Extent: {x: 6.5572, y: 7.70455, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -125609,7 +125836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1424664488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -126242,6 +126469,7 @@ GameObject:
   - component: {fileID: 1454334021}
   - component: {fileID: 1454334023}
   - component: {fileID: 1454334022}
+  - component: {fileID: 1454334024}
   m_Layer: 5
   m_Name: Casette
   m_TagString: Untagged
@@ -126266,7 +126494,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -670, y: -178}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 106.25, y: 65.625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1454334022
 MonoBehaviour:
@@ -126306,6 +126534,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454334020}
   m_CullTransparentMesh: 1
+--- !u!114 &1454334024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454334020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1454334022}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1457735310
 GameObject:
   m_ObjectHideFlags: 0
@@ -126485,8 +126757,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4656, y: -0.18184996, z: 0}
-    m_Extent: {x: 6.5477, y: 7.70405, z: 0}
+    m_Center: {x: 0.46895003, y: -0.18095016, z: 0}
+    m_Extent: {x: 6.5561504, y: 7.71415, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -126770,6 +127042,7 @@ GameObject:
   - component: {fileID: 1477636809}
   - component: {fileID: 1477636811}
   - component: {fileID: 1477636810}
+  - component: {fileID: 1477636812}
   m_Layer: 5
   m_Name: night vision
   m_TagString: Untagged
@@ -126793,8 +127066,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -670, y: -42}
-  m_SizeDelta: {x: 250, y: 250}
+  m_AnchoredPosition: {x: -689.8, y: -42}
+  m_SizeDelta: {x: 360, y: 202.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1477636810
 MonoBehaviour:
@@ -126834,6 +127107,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477636808}
   m_CullTransparentMesh: 1
+--- !u!114 &1477636812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477636808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1477636810}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1479612938
 GameObject:
   m_ObjectHideFlags: 0
@@ -127832,6 +128149,7 @@ GameObject:
   - component: {fileID: 1511523084}
   - component: {fileID: 1511523086}
   - component: {fileID: 1511523085}
+  - component: {fileID: 1511523087}
   m_Layer: 5
   m_Name: Fuzeboxkey
   m_TagString: Untagged
@@ -127856,7 +128174,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -670, y: 186}
-  m_SizeDelta: {x: 100, y: 75}
+  m_SizeDelta: {x: 116.666664, y: 62.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511523085
 MonoBehaviour:
@@ -127896,6 +128214,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511523083}
   m_CullTransparentMesh: 1
+--- !u!114 &1511523087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511523083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1511523085}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1515042986
 GameObject:
   m_ObjectHideFlags: 0
@@ -129918,8 +130280,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46420002, y: -0.18149996, z: 0}
-    m_Extent: {x: 6.5509, y: 7.7093, z: 0}
+    m_Center: {x: 0.45740008, y: -0.17509985, z: 0}
+    m_Extent: {x: 6.554, y: 7.7079, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -138226,8 +138588,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.1694999, y: -2.5197499, z: 0}
-    m_Extent: {x: 13.2286, y: 10.51805, z: 0}
+    m_Center: {x: -1.1612501, y: -1.5638499, z: 0}
+    m_Extent: {x: 13.23545, y: 11.480049, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -138923,7 +139285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1746147750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139213,6 +139575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlowerInventory: {fileID: 32012932}
+  handler: {fileID: 2049653892}
 --- !u!1 &1751898653
 GameObject:
   m_ObjectHideFlags: 0
@@ -142081,8 +142444,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46724987, y: -0.18120003, z: 0}
-    m_Extent: {x: 6.56255, y: 7.699, z: 0}
+    m_Center: {x: 0.46924996, y: -0.18379998, z: 0}
+    m_Extent: {x: 6.55525, y: 7.7091, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -145575,7 +145938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1976923978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -156973,6 +157336,7 @@ GameObject:
   - component: {fileID: 2049653888}
   - component: {fileID: 2049653889}
   - component: {fileID: 2049653891}
+  - component: {fileID: 2049653892}
   m_Layer: 0
   m_Name: ScriptHandler
   m_TagString: Untagged
@@ -157031,7 +157395,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 257081f53511b3349901c54141ed58bd, type: 3}
   - {fileID: 8300000, guid: c344bc7e959e5eb47b9d866d2dc142b2, type: 3}
   - {fileID: 8300000, guid: 2232bd65a1f37cb44b00aaeeca84a1e4, type: 3}
-  GrassClip: []
+  GrassClip:
+  - {fileID: 8300000, guid: 8f896336ecb59e240845c6b7b572298a, type: 3}
+  - {fileID: 8300000, guid: e158e9b336b478c4397dcccdfea966b0, type: 3}
+  - {fileID: 8300000, guid: b13555d63a7a263488870c7065102fcd, type: 3}
   VentClip:
   - {fileID: 8300000, guid: 184f7624992b7834988215cd77568a9a, type: 3}
   - {fileID: 8300000, guid: b265a20a82102b14f8cf68b2abd75009, type: 3}
@@ -157093,6 +157460,33 @@ MonoBehaviour:
   hoverCursor: {fileID: 2800000, guid: c7798a68575a16741861bf5b8929d80c, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
+--- !u!114 &2049653892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049653884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd7921ec34c9ed4ca10b2843afbd568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FuseBoxKey: {fileID: 1511523087}
+  MetalDetector: {fileID: 1092031693}
+  NightVision: {fileID: 1477636812}
+  Tape: {fileID: 1454334024}
+  Money: {fileID: 250141438}
+  Crowbar: {fileID: 1107866077}
+  Bone: {fileID: 165689631}
+  FishingRod: {fileID: 110359014}
+  TickForFuseBoxKey: {fileID: 1380921816}
+  TickForMetalDetector: {fileID: 209608737}
+  TickForNightVision: {fileID: 220740028}
+  TickForTapeAndMoney: {fileID: 89655435}
+  TickForCrowbar: {fileID: 1976923977}
+  TickForBone: {fileID: 1424664487}
+  TickForFishingRod: {fileID: 1006006725}
 --- !u!1 &2051537597
 GameObject:
   m_ObjectHideFlags: 0
