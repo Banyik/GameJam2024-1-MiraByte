@@ -16,13 +16,13 @@ PlayerSettings:
   productName: B405
   defaultCursor: {fileID: 2800000, guid: 0cebc7fc1e6689446880f03c42aeb689, type: 3}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
-  m_SplashScreenAnimation: 1
+  m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -39,7 +39,23 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
+    duration: 2
+  - logo: {fileID: 21300000, guid: a8e4c1bca76b2b740aee969a196a3f2e, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 4108d47e61ce18b4ea7ca16e03d09933, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 5e1b238381c0b624a8b5caa226d5e0fc, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 99abad7a1a053764893fe25ff4a1a662, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: b518734e54d5ee14d9be922916919b5a, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 2464c463045809845b8192c21e362cf9, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 9b934235a5274cf4a9da9a2b77139897, type: 3}
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920

@@ -9,7 +9,7 @@ public class GameOverMenu : MonoBehaviour
     public void Retry() 
     {
         gameOverMenu.SetActive(false);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
     public void BackToMainMenu() 
     {

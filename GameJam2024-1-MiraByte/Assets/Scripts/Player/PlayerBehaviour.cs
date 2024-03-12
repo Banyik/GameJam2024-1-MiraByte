@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 namespace Player
@@ -8,8 +7,8 @@ namespace Player
     public class PlayerBehaviour : MonoBehaviour
     {
         public PlayerType playerType;
-        public AnimatorController prisonerAnimator;
-        public AnimatorController guardAnimator;
+        public RuntimeAnimatorController prisonerAnimator;
+        public RuntimeAnimatorController guardAnimator;
         Animator playerAnimator;
         PlayerBase player;
         Rigidbody2D rb;
