@@ -46,7 +46,7 @@ public class FuseBoxLeverHandler : MonoBehaviour
 
     public bool IsDisarmedState()
     {
-        return upLevers[0] && !upLevers[1] && upLevers[2] && upLevers[3] && !upLevers[4];
+        return upLeverStates[0] && !upLeverStates[1] && upLeverStates[2] && upLeverStates[3] && !upLeverStates[4];
     }
 
     public void CheckIfDisarmed()

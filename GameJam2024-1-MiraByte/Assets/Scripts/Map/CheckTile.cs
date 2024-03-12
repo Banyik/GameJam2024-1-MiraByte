@@ -135,6 +135,7 @@ public class CheckTile : MonoBehaviour
                             CallMessage(messageIfItemIsMissing);
                             return;
                         }
+                        GameObject.Find("ScriptHandler").GetComponent<UIBehaviour>().DisableObjects();
                         interactableGameObject.SetActive(true);
                         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().canMove = false;
                     }

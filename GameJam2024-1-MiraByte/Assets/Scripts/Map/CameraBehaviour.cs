@@ -31,8 +31,7 @@ public class CameraBehaviour : MonoBehaviour
     {
         if((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive && GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner)
         {
-            GameObject.Find("PauseMenu").SetActive(false);
-            GameObject.Find("List").SetActive(false);
+            GameObject.Find("ScriptHandler").GetComponent<UIBehaviour>().DisableObjects();
             Time.timeScale = 0f;
             gameOverMenu.SetActive(true);
         }
@@ -42,8 +41,7 @@ public class CameraBehaviour : MonoBehaviour
     {
         if ((collision.tag == "PlayerVisibility" || collision.tag == "Player") && isActive && GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner)
         {
-            GameObject.Find("PauseMenu").SetActive(false);
-            GameObject.Find("List").SetActive(false);
+            GameObject.Find("ScriptHandler").GetComponent<UIBehaviour>().DisableObjects();
             Time.timeScale = 0f;
             gameOverMenu.SetActive(true);
         }

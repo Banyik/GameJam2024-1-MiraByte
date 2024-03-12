@@ -10,7 +10,8 @@ public class Inventory : MonoBehaviour
     public ListHandler handler;
     public void AddItem(Items item)
     {
-        if(gameObject.GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner)
+        PlayerBehaviour playerBehaviour;
+        if(gameObject.TryGetComponent<PlayerBehaviour>(out playerBehaviour) && playerBehaviour.playerType == PlayerType.Prisoner)
         {
             handler.GotItem(item.item);
         }
