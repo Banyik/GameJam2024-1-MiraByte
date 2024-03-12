@@ -19,6 +19,9 @@ public class AddItemToInventory : MonoBehaviour
             case 2:
                 inventory.AddItem(new Items(ItemTypes.NightVisionGoogles, false, false));
                 break;
+            case 3:
+                inventory.AddItem(new Items(ItemTypes.DeskKey, false, false));
+                break;
             default:
                 break;
         }
