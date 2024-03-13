@@ -19,6 +19,14 @@ public class MetalDetectorTrigger : MonoBehaviour
                 beepSource.Play();
             }
         }
+        else if(collision.tag == "Player" && collision.GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner &&
+            !collision.GetComponent<PlayerBehaviour>().isUsingMetalDetector)
+        {
+            if (beepSource.isPlaying)
+            {
+                beepSource.Stop();
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -26,10 +34,18 @@ public class MetalDetectorTrigger : MonoBehaviour
         if (collision.tag == "Player" && collision.GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner &&
             collision.GetComponent<PlayerBehaviour>().isUsingMetalDetector)
         {
-            beepSource.loop = true;
             if (!beepSource.isPlaying)
             {
                 beepSource.Play();
+            }
+        }
+        else if (collision.tag == "Player" && collision.GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner &&
+            !collision.GetComponent<PlayerBehaviour>().isUsingMetalDetector)
+        {
+
+            if (beepSource.isPlaying)
+            {
+                beepSource.Stop();
             }
         }
     }
@@ -40,6 +56,15 @@ public class MetalDetectorTrigger : MonoBehaviour
            collision.GetComponent<PlayerBehaviour>().isUsingMetalDetector)
         {
             beepSource.loop = false;
+            if (beepSource.isPlaying)
+            {
+                beepSource.Stop();
+            }
+        }
+        else if (collision.tag == "Player" && collision.GetComponent<PlayerBehaviour>().playerType == PlayerType.Prisoner &&
+           !collision.GetComponent<PlayerBehaviour>().isUsingMetalDetector)
+        {
+
             if (beepSource.isPlaying)
             {
                 beepSource.Stop();

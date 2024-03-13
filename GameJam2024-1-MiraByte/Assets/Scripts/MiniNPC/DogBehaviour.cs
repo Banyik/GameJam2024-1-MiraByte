@@ -33,17 +33,6 @@ public class DogBehaviour : MonoBehaviour
         }
         if(Vector3.Distance(gameObject.transform.position, Player.transform.position) < barkDistance)
         {
-            if(Player.GetComponent<Inventory>().items.Count > 0 && Player.GetComponent<Inventory>().items.Where(x => x.item == ItemTypes.Bone).ToList().Count > 0)
-            {
-                spriteRenderer.sprite = sit;
-                if(source.clip != eat || !source.isPlaying)
-                {
-                    source.clip = eat;
-                    source.Play();
-                }
-                hasBone = true;
-                return;
-            }
             if (source.clip != bark || !source.isPlaying)
             {
                 source.clip = bark;
@@ -67,6 +56,21 @@ public class DogBehaviour : MonoBehaviour
         {
             spriteRenderer.sprite = sit;
             source.Stop();
+        }
+    }
+
+    public void GiveBone()
+    {
+        if (Vector3.Distance(gameObject.transform.position, Player.transform.position) < growlDistance)
+        {
+            spriteRenderer.sprite = sit;
+            if (source.clip != eat || !source.isPlaying)
+            {
+                source.clip = eat;
+                source.Play();
+            }
+            hasBone = true;
+            return;
         }
     }
 }
