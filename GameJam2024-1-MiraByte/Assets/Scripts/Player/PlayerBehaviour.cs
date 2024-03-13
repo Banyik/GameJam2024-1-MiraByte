@@ -18,7 +18,7 @@ namespace Player
         public float walkTime;
         public bool canMove = true;
         public bool isUsingMetalDetector = false;
-
+        public GameObject[] StoppingUIElements;
         public bool CanMove { get => canMove; set => canMove = value; }
 
         void Start()
@@ -48,7 +48,20 @@ namespace Player
             else
             {
                 rb.velocity = new Vector2(0, 0);
+                ValidateUIElements();
             }
+        }
+
+        void ValidateUIElements()
+        {
+            foreach (var item in StoppingUIElements)
+            {
+                if (item.activeInHierarchy)
+                {
+                    return;
+                }
+            }
+            canMove = true;
         }
 
         void MovementHandler()

@@ -25,7 +25,7 @@ public class DogBehaviour : MonoBehaviour
 
     bool hasBone = false;
 
-    void Update()
+    void FixedUpdate()
     {
         if (hasBone)
         {
@@ -36,7 +36,7 @@ public class DogBehaviour : MonoBehaviour
             if(Player.GetComponent<Inventory>().items.Count > 0 && Player.GetComponent<Inventory>().items.Where(x => x.item == ItemTypes.Bone).ToList().Count > 0)
             {
                 spriteRenderer.sprite = sit;
-                if(source.clip != eat)
+                if(source.clip != eat || !source.isPlaying)
                 {
                     source.clip = eat;
                     source.Play();
@@ -44,7 +44,7 @@ public class DogBehaviour : MonoBehaviour
                 hasBone = true;
                 return;
             }
-            if (source.clip != bark)
+            if (source.clip != bark || !source.isPlaying)
             {
                 source.clip = bark;
                 source.Play();
@@ -57,7 +57,7 @@ public class DogBehaviour : MonoBehaviour
         else if(Vector3.Distance(gameObject.transform.position, Player.transform.position) < growlDistance)
         {
             spriteRenderer.sprite = stand;
-            if (source.clip != growl)
+            if (source.clip != growl || !source.isPlaying)
             {
                 source.clip = growl;
                 source.Play();
