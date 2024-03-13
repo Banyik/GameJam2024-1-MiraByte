@@ -61,7 +61,7 @@ public class DogBehaviour : MonoBehaviour
 
     public void GiveBone()
     {
-        if (Vector3.Distance(gameObject.transform.position, Player.transform.position) < growlDistance)
+        if (Vector3.Distance(gameObject.transform.position, Player.transform.position) < growlDistance && !hasBone)
         {
             spriteRenderer.sprite = sit;
             if (source.clip != eat || !source.isPlaying)
