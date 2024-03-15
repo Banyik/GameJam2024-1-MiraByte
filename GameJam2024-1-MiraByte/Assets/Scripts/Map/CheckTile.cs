@@ -112,6 +112,11 @@ public class CheckTile : MonoBehaviour
                     }
                     break;
                 case ActionTypes.CheckInteractableItem:
+                    if (DestroyOnPickUp)
+                    {
+                        DeactivateText();
+                        Destroy(gameObject);
+                    }
                     if (isOnlyForPrisoner && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>().playerType == PlayerType.Guard)
                     {
                         CallMessage("Ez nem az én feladatom...");

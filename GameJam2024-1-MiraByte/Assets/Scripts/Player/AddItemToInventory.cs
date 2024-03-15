@@ -22,6 +22,9 @@ public class AddItemToInventory : MonoBehaviour
             case 3:
                 inventory.AddItem(new Items(ItemTypes.DeskKey, false, false));
                 break;
+            case 4:
+                inventory.AddItem(new Items(ItemTypes.FuseBoxKey, true, false));
+                break;
             default:
                 break;
         }
