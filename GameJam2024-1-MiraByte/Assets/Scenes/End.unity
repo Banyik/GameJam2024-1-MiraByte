@@ -330,8 +330,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0150r:\n(bel\xE9gz\xE9s\u2026 kil\xE9gz\xE9s) Khm, nem az \xE9n csukl\xF3mon
-    f\xE9nylik a bilincs m\xE9lyen tisztelt Igazgat\xF3 \xDAr..."
+  m_text: "\u0150r:\n( bel\xE9gz\xE9s\u2026 kil\xE9gz\xE9s) Khm, nem az \xE9n csukl\xF3mon
+    f\xE9nylik a bilincs m\xE9lyen tisztelt igazgat\xF3 \xFAr.."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B\xEDr\xF3:\nA h\xEDvott szemtan\xFAk k\xF6z\xFCl egyenl\u0151re egy sincs
+  m_text: "B\xEDr\xF3:\nA h\xEDvott szemtan\xFAk k\xF6z\xFCl egyel\u0151re egy sincs
     jelen."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -693,8 +693,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Igazgat\xF3:\nNevets\xE9ges! Csak mondja a b\xEDrs\xE1got \xE9s kifizetem,
-    nincs id\u0151m ilyenekre. Ne sz\xF3rakozzanak velem. Az csak egy kazetta, nem
-    jelent semmit, hol vannak a szemtan\xFAk? "
+    nincs id\u0151m ilyenekre. Ne sz\xF3rakozzanak velem! Az az egy kazetta nem jelent
+    semmit, hol vannak a szemtan\xFAk?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -1181,7 +1181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0150r:\n(m\xE9g mindig nincs itt, ha itt hagy a p\xE1cban akkor esk\xFCsz\xF6m,
+  m_text: "\u0150r:\n(m\xE9g mindig nincs itt. Ha itt hagy a p\xE1cban, akkor esk\xFCsz\xF6m,
     hogy kitekerem a nyak\xE1t)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0150r:\nEln\xE9z\xE9st"
+  m_text: "\u0150r:\nEln\xE9z\xE9st..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -2300,7 +2300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0150r:\nMaga besz\xE9l a sz\xE9gyenr\u0151l! Maga gerinctelen f\xE9reg"
+  m_text: "\u0150r:\nMaga besz\xE9l a sz\xE9gyenr\u0151l! Maga gerinctelen f\xE9reg!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -2601,8 +2601,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B\xEDr\xF3:\nKhm Khm, Uraim fogj\xE1k vissza magunkat, ez az igazs\xE1gszolg\xE1ltat\xE1s
-    h\xE1za, nem a gyermeteg becsm\xE9rl\xE9s\xE9. "
+  m_text: "B\xEDr\xF3:\nKhm khm, uraim fogj\xE1k vissza magunkat, ez az igazs\xE1gszolg\xE1ltat\xE1s
+    h\xE1za, nem a gyermeteg becsm\xE9rl\xE9se. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -3523,7 +3523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bir\xF3:\nA t\xE1rgyal\xE1st ideje lez\xE1rni. "
+  m_text: "Bir\xF3:\nA t\xE1rgyal\xE1st ideje berekeszteni."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -3733,7 +3733,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Igazgat\xF3:\nL\xE1tja? Nincs senki, aki kiseg\xEDten\xE9, egyed\xFCl
-    maradt. Elhagyta a kuty\xE1ja. "
+    maradt. Elhagyta a kuty\xE1ja. \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -3868,7 +3868,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Igazgat\xF3:\nMajd fog az f\xE9nyleni, ha rajtam m\xFAlik. Maga nem m\xE1s
-    mint a rendfenntart\xE1s sz\xE9gyene."
+    mint a rendfenntart\xE1s sz\xE9gyene. Egy \xE1rul\xF3!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -4002,10 +4002,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B\xEDr\xF3:\nA v\xE1dak alapj\xE1n, Igazs\xE1gszolg\xE1ltat\xE1s folyamatainak
+  m_text: "B\xEDr\xF3:\nA v\xE1dak alapj\xE1n, igazs\xE1gszolg\xE1ltat\xE1s folyamatainak
     kereszt\xFCl h\xE1g\xE1sa, \xE9s manipul\xE1l\xE1sa, szem\xE9lyes szabads\xE1gjogok
     \xE9s \xF6nrendelkez\xE9sr\u0151l val\xF3 er\u0151szakos megfoszt\xE1s, rabszolgamunka
-    haszn\xE1lata, sikkaszt\xE1s \xE9s ad\xF3csal\xE1s"
+    haszn\xE1lata, sikkaszt\xE1s \xE9s ad\xF3csal\xE1s...\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -4365,7 +4365,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u0150r:\n(persze, hogy nincs itt senki, mind boldogan nyaralnak a ken\u0151p\xE9nzzel
-    a zseb\xFCkben.) Tisztelt B\xEDr\xF3 \xFAr! J\xF3 okom van azt hinni, hogy a
+    a zseb\xFCkben.) Tisztelt b\xEDr\xF3 \xFAr! J\xF3 okom van azt hinni, hogy a
     szemtan\xFA meg fog jelenni, k\xE9rem adjon m\xE9g egy kis id\u0151t."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
@@ -4593,7 +4593,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0150r:\n\xC9n mindent megpr\xF3baltam\u2026 Hiszek benne "
+  m_text: "\u0150r:\n\xC9n mindent megpr\xF3b\xE1ltam\u2026 Hiszek benne... "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
   m_sharedMaterial: {fileID: -7811761751310298441, guid: e5221c71e99ccc94aa9c2970709680ad, type: 2}
